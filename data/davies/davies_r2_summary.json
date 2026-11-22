@@ -1,0 +1,313 @@
+{
+  "F1a_nonverbal_direct": {
+    "total": 2,
+    "forms": [
+      {
+        "form": "SILLY ME FOR SINKING",
+        "freq": 1
+      },
+      {
+        "form": "SILLY ME FOR THINKING",
+        "freq": 1
+      }
+    ]
+  },
+  "F1b_pp_eval_for_ving": {
+    "total": 115,
+    "unique_types": 90,
+    "by_frame_tokens": {
+      "good for": 40,
+      "shame on": 55,
+      "shame to": 1,
+      "good on": 12,
+      "kudos for": 1,
+      "kudos to": 6
+    },
+    "by_frame_types": {
+      "good for": 30,
+      "shame on": 40,
+      "shame to": 1,
+      "good on": 12,
+      "kudos for": 1,
+      "kudos to": 6
+    },
+    "kwic_distinct_shows": 89
+  },
+  "F2_lex_np_for_ving": {
+    "total_tokens": 13,
+    "bare_np_imprec_bened": 7,
+    "god_optative": 3,
+    "finite_or_perc_verb": 3,
+    "accountable_animate_or_personified": 13,
+    "inanimate_dismissal": 0,
+    "distinct_shows": 12
+  },
+  "F3_fuck_euphemisms": {
+    "raw_total": 223,
+    "raw_unique_types": 32,
+    "raw_by_head": {
+      "frak": 71,
+      "fudge": 72,
+      "feck": 22,
+      "eff": 32,
+      "frig": 19,
+      "frick": 7
+    },
+    "kwic_100_audit": {
+      "euphemistic_outside_bare_np": 9,
+      "excl_literal_fudge_or_name": 21,
+      "verified_bare_np_imprec": 61,
+      "metalinguistic_or_quoted_imprec": 9
+    },
+    "kwic_verified_imprec_by_head": {
+      "eff": 7,
+      "frig": 5,
+      "fudge": 8,
+      "frick": 1,
+      "feck": 8,
+      "frak": 32
+    },
+    "kwic_verified_shows_by_head": {
+      "eff": 4,
+      "frig": 4,
+      "fudge": 6,
+      "frick": 1,
+      "feck": 4,
+      "frak": 5
+    }
+  },
+  "F4a_bless_local_ellipsis_split": {
+    "total_god_bless_lex_np": 271,
+    "unique_types": 140,
+    "civic_targets": {
+      "BLESS THE UNITED": {
+        "total": 43,
+        "god": 42
+      },
+      "BLESS THE CHILD": {
+        "total": 26,
+        "god": 23
+      },
+      "BLESS YOUR MAJESTY": {
+        "total": 10,
+        "god": 8
+      },
+      "BLESS THE KING": {
+        "total": 7,
+        "god": 7
+      }
+    },
+    "affective_targets": {
+      "BLESS YOUR HEART": {
+        "total": 94,
+        "god": 3
+      },
+      "BLESS HER HEART": {
+        "total": 56,
+        "god": 3
+      },
+      "BLESS HIS HEART": {
+        "total": 53,
+        "god": 2
+      },
+      "BLESS MY SOUL": {
+        "total": 69,
+        "god": 4
+      }
+    },
+    "civic_god": 80,
+    "civic_bare": 6,
+    "affective_god": 12,
+    "affective_bare": 260,
+    "fisher_two_sided_p": 6.532767635377651e-59
+  },
+  "F4b_minced_god_and_god_rot": {
+    "total": 140,
+    "forms": {
+      "gosh darn it": 71,
+      "god dang it": 28,
+      "gosh dang it": 24,
+      "god darn it": 11,
+      "god rot him": 2,
+      "god rot you": 2,
+      "god rot her": 1,
+      "dog darn it": 1
+    },
+    "minced_it_only": 135,
+    "minced_non_it": 0,
+    "god_rot_total": 5,
+    "god_rot_examples": [
+      [
+        2016,
+        "US/CA",
+        "New Girl",
+        ",' cause what else can you do? Just Singular being Singular. Gosh darn it. (sighing) He ran away after a while... my brother,"
+      ],
+      [
+        2016,
+        "UK/IE",
+        "Dickensian",
+        "on that back of yours, Inspector, won't you? Goodnight. God rot you, Jacob. God rot your vicious soul. Well, your shareholders know"
+      ],
+      [
+        2003,
+        "US/CA",
+        "Friends",
+        "in front of her. So get ready to hear a lot of boo-hockey gosh darn it and brother pucker. How do you know she's gon na start talking"
+      ],
+      [
+        2002,
+        "UK/IE",
+        "Foyle's War",
+        "you know who killed him, Mr. Foyle? Yes. Yeah. God rot him, whoever he is, eh? Hmm. Mrs. Gascoigne... I"
+      ],
+      [
+        1995,
+        "UK/IE",
+        "The Thin Blue Line",
+        "'m busy? Damn technology. A present from Mrs. Blaster Sump, God rot her vicious soul. \" hey, guvnor, \" I said, \" do"
+      ],
+      [
+        1991,
+        "UK/IE",
+        "Lovejoy",
+        "us Hackney kids shouting, \" Cold, cold! \" The attendant, God rot him, kept throttling back on the hot water. - Life was real."
+      ],
+      [
+        1990,
+        "US/CA",
+        "In Living Color",
+        "know, Tom. Everybody knows the Brothers Brothers. We're celebrities, gosh darn it. [Chuckles] I mean, why do you think they always put us in"
+      ]
+    ]
+  },
+  "F5a_be_participle": {
+    "forms": {
+      "be damned": 1421,
+      "be darned": 103,
+      "be buggered": 20,
+      "be danged": 9
+    },
+    "total": 1553,
+    "x_be_damned_buggered_in_100_kwic": 16,
+    "x_be_damned_samples": [
+      [
+        "The Flash",
+        "Cause you've got Iris. You got your happy ending. Everyone else be damned. So, I'll tell you what: you guys let me go,"
+      ],
+      [
+        "Berlin Station",
+        "has to be at their most charming. Do my best. Thomas Shaw be damned. This station still runs like a Swiss watch. It can also be an"
+      ],
+      [
+        "Rectify",
+        ", taking the squares, and the contagion of menacing fear, and mercy be damned. And occasionally, I would... I would see Mr. Gaines, away"
+      ],
+      [
+        "Dallas",
+        "to protect her. Even if it meant breaking the law? The law be damned. I knew that somewhere down the road that my daughter was gon na be"
+      ],
+      [
+        "The Fosters",
+        ", help yourself! Want some cigarettes? Smoke it up! Lung cancer be damned! Want some booze? No? How about some heroin? Oh, wow"
+      ],
+      [
+        "New Tricks",
+        "So it looks like this Victorian business will be my last case. Fisher be damned, but it would be good to solve it. Look, I've got"
+      ],
+      [
+        "Cloudstreet",
+        "just got to go. Tell him I said I'm sorry. Sony be buggered. What about me? I can't. I don't want to bloody"
+      ],
+      [
+        "Sanctuary",
+        "blood. May we never see their like again. Slimy perversions of science be damned. Hey, Henry, I'll show you a shortcut. He kept one"
+      ],
+      [
+        "Legend of the Seeker",
+        "'re asking. Any woman who took up arms would die instantly, and be damned for eternity. I've taken up arms all my life and I haven't"
+      ],
+      [
+        "Rome",
+        "What? - Pullo is not alone. We'll not let any brother be damned by this dirty mob. These dogs will be yelping louder soon. When they"
+      ],
+      [
+        "Everwood",
+        "hear, they? re quite powerful. So.... l? ll be damned. No, I want to play the gun game first, and I get"
+      ],
+      [
+        "Oz",
+        "I'm here. And whoever listens, listens. Whoever don't, be damned. Thank you, officer. You want me in or out? Out."
+      ],
+      [
+        "Oz",
+        "vow as a priest. If I'm lying to you, may I be damned for all time. Schillinger, don't let anything happen to Beecher's daughter"
+      ],
+      [
+        "Andromeda",
+        "just gon na do whatever you want with my crew, and my opinion be damned? Your opinion does matter. But there's a time and a place for"
+      ],
+      [
+        "Northern Exposure",
+        "he goes to bed, he has to have his two scoops. Arteries be damned. Oh, I threw in a-a box of, um, Good Plenty."
+      ],
+      [
+        "'Allo 'Allo!",
+        "'ll be damned? And if they discover the stolen painting,' ll be damned. Pay attention! Go up there with the girls and your uniform will be"
+      ]
+    ]
+  },
+  "F5b_finite_baseline": {
+    "total": 49,
+    "by_lemma": {
+      "curse": 41,
+      "damn": 6,
+      "darn_literal_mending": 2
+    },
+    "minced_curse_sense_hits": 0
+  },
+  "F5c_dash_it_audit": {
+    "raw_total": 65,
+    "verified_imprecative": 59,
+    "excluded_literal_or_slang": 6,
+    "regions": {
+      "UK/IE": 48,
+      "US/CA": 11
+    },
+    "distinct_shows": 26,
+    "top_shows": [
+      [
+        "Jeeves and Wooster",
+        14
+      ],
+      [
+        "BBC Play of the Month",
+        6
+      ],
+      [
+        "Blandings",
+        4
+      ],
+      [
+        "Parade's End",
+        4
+      ],
+      [
+        "A Dorothy L. Sayers ...",
+        3
+      ],
+      [
+        "Hogan's Heroes",
+        3
+      ],
+      [
+        "Poirot",
+        2
+      ],
+      [
+        "Little Dorrit",
+        2
+      ]
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+# LaTeX build artifacts & working copies
+main.*
+english-imprecatives-blind.pdf
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# macOS & Python caches
+.DS_Store
+__pycache__/
+*.pyc
+.~lock.*#
+
+# External symlinks & local scratch
+literature
+literature/
+
+# Restricted / third-party raw corpus extracts and concordances (never publish)
+data/local/*_raw_extract.json
+data/davies/*-raw.txt
+data/davies/tv_t1a_to_t8a_parsed.json
+data/davies/coca-*.txt
+
+# Internal review simulations and raw agent outputs (never publish)
+reviews/
+notes/private/

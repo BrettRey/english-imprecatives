@@ -1,0 +1,1207 @@
+{
+  "corpora": {
+    "cabnc": {
+      "tokens": 2054817,
+      "files": 1860,
+      "variety": "UK spoken (BNC1994 CHAT)"
+    },
+    "bnc_baby_full": {
+      "tokens": 4001787,
+      "files": 182,
+      "variety": "UK spoken+written (BNC Baby XML)"
+    },
+    "bnc_baby_dedup": {
+      "tokens": 3442717,
+      "files": 170,
+      "excluded_overlap_dem_files": [
+        "KB5",
+        "KB7",
+        "KBC",
+        "KBD",
+        "KBH",
+        "KBJ",
+        "KBP",
+        "KBW",
+        "KCC",
+        "KCF",
+        "KE2",
+        "KE4"
+      ],
+      "excluded_overlap_dem_tokens": 559070,
+      "by_genre_tokens": {
+        "aca": 1010816,
+        "dem": 457955,
+        "fic": 1010279,
+        "news": 963667
+      }
+    },
+    "oanc": {
+      "tokens": 14449791,
+      "files": 8824,
+      "variety": "US spoken+written"
+    },
+    "tier1_dedup_total_tokens": 19947325
+  },
+  "adjudicated": {
+    "cabnc": {
+      "by_head": {
+        "damn": {
+          "raw": 7,
+          "bare_verified": 3,
+          "god_optative": 0,
+          "excluded": 4,
+          "subtypes": {
+            "IT_FORMULA": 3
+          },
+          "excl_breakdown": {
+            "EXCL_DISFLUENCY": 1,
+            "EXCL_IDIOM": 2,
+            "EXCL_STANDALONE": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "bless": {
+          "raw": 37,
+          "bare_verified": 30,
+          "god_optative": 3,
+          "excluded": 4,
+          "subtypes": {
+            "ROUTINE_BLESS_YOU": 14,
+            "PRON_NON2": 10,
+            "POSS_BODY": 6
+          },
+          "excl_breakdown": {
+            "EXCL_META": 1,
+            "EXCL_PRAYER_IMP": 2,
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 16,
+          "full_np_lex": 0
+        },
+        "fuck": {
+          "raw": 32,
+          "bare_verified": 17,
+          "god_optative": 0,
+          "excluded": 15,
+          "subtypes": {
+            "IT_FORMULA": 6,
+            "PRON_2SG": 2,
+            "PRON_NON2": 6,
+            "DEM_OBJ": 3
+          },
+          "excl_breakdown": {
+            "EXCL_GARBLED": 1,
+            "EXCL_META": 2,
+            "EXCL_NPI": 4,
+            "EXCL_STANDALONE": 6,
+            "EXCL_VERB": 1,
+            "EXCL_WH_THE_FUCK": 1
+          },
+          "non_it_verified": 11,
+          "full_np_lex": 0
+        },
+        "sod": {
+          "raw": 18,
+          "bare_verified": 15,
+          "god_optative": 0,
+          "excluded": 3,
+          "subtypes": {
+            "IT_FORMULA": 7,
+            "PRON_2SG": 1,
+            "PRON_NON2": 4,
+            "DEM_OBJ": 3
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 2,
+            "EXCL_NPI": 1
+          },
+          "non_it_verified": 8,
+          "full_np_lex": 0
+        },
+        "bugger": {
+          "raw": 25,
+          "bare_verified": 14,
+          "god_optative": 0,
+          "excluded": 11,
+          "subtypes": {
+            "IT_FORMULA": 7,
+            "PRON_NON2": 5,
+            "DEM_OBJ": 1,
+            "FULL_NP_LEX": 1
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 5,
+            "EXCL_NPI": 6
+          },
+          "non_it_verified": 7,
+          "full_np_lex": 1
+        },
+        "screw": {
+          "raw": 11,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 11,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_VERB": 11
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "blast": {
+          "raw": 2,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 2,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 1,
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "curse": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "hang": {
+          "raw": 36,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 36,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_VERB": 36
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "drat": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "darn": {
+          "raw": 1,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {
+            "IT_FORMULA": 1
+          },
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dash": {
+          "raw": 1,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 1,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_PROPER_NOUN": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dang": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        }
+      },
+      "totals": {
+        "raw": 170,
+        "bare_verified": 80,
+        "god_optative": 3,
+        "excluded": 87,
+        "IT_FORMULA": 24,
+        "ROUTINE_BLESS_YOU": 14,
+        "PRON_2SG": 3,
+        "PRON_NON2": 25,
+        "DEM_OBJ": 7,
+        "POSS_BODY": 6,
+        "FULL_NP_LEX": 1
+      },
+      "prosody_verified": {
+        "no_cue": 80
+      },
+      "prosody_standalone": {
+        "no_cue": 3,
+        "cue": 4
+      }
+    },
+    "bnc_baby_full": {
+      "by_head": {
+        "damn": {
+          "raw": 66,
+          "bare_verified": 19,
+          "god_optative": 0,
+          "excluded": 47,
+          "subtypes": {
+            "IT_FORMULA": 8,
+            "PRON_2SG": 7,
+            "PRON_NON2": 1,
+            "FULL_NP_LEX": 3
+          },
+          "excl_breakdown": {
+            "EXCL_AMBIG_BARE_NP": 1,
+            "EXCL_NOUN": 1,
+            "EXCL_PRENOM_ADJ": 41,
+            "EXCL_STANDALONE": 3,
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 11,
+          "full_np_lex": 3
+        },
+        "bless": {
+          "raw": 37,
+          "bare_verified": 26,
+          "god_optative": 7,
+          "excluded": 4,
+          "subtypes": {
+            "ROUTINE_BLESS_YOU": 13,
+            "PRON_NON2": 8,
+            "POSS_BODY": 4,
+            "FULL_NP_LEX": 1
+          },
+          "excl_breakdown": {
+            "EXCL_PRAYER_IMP": 1,
+            "EXCL_VERB": 3
+          },
+          "non_it_verified": 13,
+          "full_np_lex": 1
+        },
+        "fuck": {
+          "raw": 28,
+          "bare_verified": 17,
+          "god_optative": 0,
+          "excluded": 11,
+          "subtypes": {
+            "IT_FORMULA": 7,
+            "PRON_2SG": 3,
+            "PRON_NON2": 3,
+            "DEM_OBJ": 2,
+            "FULL_NP_LEX": 2
+          },
+          "excl_breakdown": {
+            "EXCL_IDIOM": 1,
+            "EXCL_NPI": 1,
+            "EXCL_STANDALONE": 1,
+            "EXCL_VERB": 7,
+            "EXCL_WH_THE_FUCK": 1
+          },
+          "non_it_verified": 10,
+          "full_np_lex": 2
+        },
+        "sod": {
+          "raw": 13,
+          "bare_verified": 8,
+          "god_optative": 0,
+          "excluded": 5,
+          "subtypes": {
+            "IT_FORMULA": 3,
+            "PRON_2SG": 1,
+            "DEM_OBJ": 1,
+            "FULL_NP_LEX": 3
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 3,
+            "EXCL_NPI": 2
+          },
+          "non_it_verified": 5,
+          "full_np_lex": 3
+        },
+        "bugger": {
+          "raw": 27,
+          "bare_verified": 12,
+          "god_optative": 0,
+          "excluded": 15,
+          "subtypes": {
+            "IT_FORMULA": 3,
+            "PRON_NON2": 7,
+            "DEM_OBJ": 1,
+            "FULL_NP_LEX": 1
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 9,
+            "EXCL_NPI": 4,
+            "EXCL_VERB": 2
+          },
+          "non_it_verified": 9,
+          "full_np_lex": 1
+        },
+        "screw": {
+          "raw": 16,
+          "bare_verified": 7,
+          "god_optative": 0,
+          "excluded": 9,
+          "subtypes": {
+            "PRON_2SG": 3,
+            "PRON_NON2": 1,
+            "DEM_OBJ": 1,
+            "FULL_NP_LEX": 2
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 3,
+            "EXCL_VERB": 6
+          },
+          "non_it_verified": 7,
+          "full_np_lex": 2
+        },
+        "blast": {
+          "raw": 24,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 23,
+          "subtypes": {
+            "IT_FORMULA": 1
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 17,
+            "EXCL_STANDALONE": 3,
+            "EXCL_VERB": 3
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "curse": {
+          "raw": 5,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 5,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 3,
+            "EXCL_VERB": 2
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "hang": {
+          "raw": 42,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 42,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 1,
+            "EXCL_PROPER_NOUN": 6,
+            "EXCL_VERB": 35
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "drat": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "darn": {
+          "raw": 3,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 3,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_PRENOM_ADJ": 2,
+            "EXCL_STANDALONE": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dash": {
+          "raw": 2,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 2,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 1,
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dang": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        }
+      },
+      "totals": {
+        "raw": 263,
+        "bare_verified": 90,
+        "god_optative": 7,
+        "excluded": 166,
+        "IT_FORMULA": 22,
+        "ROUTINE_BLESS_YOU": 13,
+        "PRON_2SG": 14,
+        "PRON_NON2": 20,
+        "DEM_OBJ": 5,
+        "POSS_BODY": 4,
+        "FULL_NP_LEX": 12
+      },
+      "prosody_verified": {},
+      "prosody_standalone": {}
+    },
+    "bnc_baby_dedup": {
+      "by_head": {
+        "damn": {
+          "raw": 46,
+          "bare_verified": 19,
+          "god_optative": 0,
+          "excluded": 27,
+          "subtypes": {
+            "IT_FORMULA": 8,
+            "PRON_2SG": 7,
+            "PRON_NON2": 1,
+            "FULL_NP_LEX": 3
+          },
+          "excl_breakdown": {
+            "EXCL_AMBIG_BARE_NP": 1,
+            "EXCL_NOUN": 1,
+            "EXCL_PRENOM_ADJ": 21,
+            "EXCL_STANDALONE": 3,
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 11,
+          "full_np_lex": 3
+        },
+        "bless": {
+          "raw": 33,
+          "bare_verified": 22,
+          "god_optative": 7,
+          "excluded": 4,
+          "subtypes": {
+            "ROUTINE_BLESS_YOU": 13,
+            "PRON_NON2": 5,
+            "POSS_BODY": 3,
+            "FULL_NP_LEX": 1
+          },
+          "excl_breakdown": {
+            "EXCL_PRAYER_IMP": 1,
+            "EXCL_VERB": 3
+          },
+          "non_it_verified": 9,
+          "full_np_lex": 1
+        },
+        "fuck": {
+          "raw": 26,
+          "bare_verified": 16,
+          "god_optative": 0,
+          "excluded": 10,
+          "subtypes": {
+            "IT_FORMULA": 7,
+            "PRON_2SG": 3,
+            "PRON_NON2": 2,
+            "DEM_OBJ": 2,
+            "FULL_NP_LEX": 2
+          },
+          "excl_breakdown": {
+            "EXCL_IDIOM": 1,
+            "EXCL_NPI": 1,
+            "EXCL_VERB": 7,
+            "EXCL_WH_THE_FUCK": 1
+          },
+          "non_it_verified": 9,
+          "full_np_lex": 2
+        },
+        "sod": {
+          "raw": 7,
+          "bare_verified": 5,
+          "god_optative": 0,
+          "excluded": 2,
+          "subtypes": {
+            "IT_FORMULA": 1,
+            "PRON_2SG": 1,
+            "FULL_NP_LEX": 3
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 1,
+            "EXCL_NPI": 1
+          },
+          "non_it_verified": 4,
+          "full_np_lex": 3
+        },
+        "bugger": {
+          "raw": 17,
+          "bare_verified": 6,
+          "god_optative": 0,
+          "excluded": 11,
+          "subtypes": {
+            "PRON_NON2": 5,
+            "DEM_OBJ": 1
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 6,
+            "EXCL_NPI": 3,
+            "EXCL_VERB": 2
+          },
+          "non_it_verified": 6,
+          "full_np_lex": 0
+        },
+        "screw": {
+          "raw": 12,
+          "bare_verified": 7,
+          "god_optative": 0,
+          "excluded": 5,
+          "subtypes": {
+            "PRON_2SG": 3,
+            "PRON_NON2": 1,
+            "DEM_OBJ": 1,
+            "FULL_NP_LEX": 2
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 2,
+            "EXCL_VERB": 3
+          },
+          "non_it_verified": 7,
+          "full_np_lex": 2
+        },
+        "blast": {
+          "raw": 24,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 23,
+          "subtypes": {
+            "IT_FORMULA": 1
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 17,
+            "EXCL_STANDALONE": 3,
+            "EXCL_VERB": 3
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "curse": {
+          "raw": 5,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 5,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 3,
+            "EXCL_VERB": 2
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "hang": {
+          "raw": 34,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 34,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 1,
+            "EXCL_PROPER_NOUN": 6,
+            "EXCL_VERB": 27
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "drat": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "darn": {
+          "raw": 3,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 3,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_PRENOM_ADJ": 2,
+            "EXCL_STANDALONE": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dash": {
+          "raw": 2,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 2,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 1,
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dang": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        }
+      },
+      "totals": {
+        "raw": 209,
+        "bare_verified": 76,
+        "god_optative": 7,
+        "excluded": 126,
+        "IT_FORMULA": 17,
+        "ROUTINE_BLESS_YOU": 13,
+        "PRON_2SG": 14,
+        "PRON_NON2": 14,
+        "DEM_OBJ": 4,
+        "POSS_BODY": 3,
+        "FULL_NP_LEX": 11
+      },
+      "prosody_verified": {},
+      "prosody_standalone": {}
+    },
+    "oanc": {
+      "by_head": {
+        "damn": {
+          "raw": 27,
+          "bare_verified": 11,
+          "god_optative": 3,
+          "excluded": 13,
+          "subtypes": {
+            "IT_FORMULA": 6,
+            "PRON_NON2": 1,
+            "FULL_NP_LEX": 4
+          },
+          "excl_breakdown": {
+            "EXCL_META": 2,
+            "EXCL_NOUN": 1,
+            "EXCL_STANDALONE": 4,
+            "EXCL_VERB": 6
+          },
+          "non_it_verified": 5,
+          "full_np_lex": 4
+        },
+        "bless": {
+          "raw": 54,
+          "bare_verified": 30,
+          "god_optative": 10,
+          "excluded": 14,
+          "subtypes": {
+            "IT_FORMULA": 1,
+            "ROUTINE_BLESS_YOU": 4,
+            "PRON_NON2": 3,
+            "POSS_BODY": 22
+          },
+          "excl_breakdown": {
+            "EXCL_META": 2,
+            "EXCL_VERB": 12
+          },
+          "non_it_verified": 25,
+          "full_np_lex": 0
+        },
+        "fuck": {
+          "raw": 43,
+          "bare_verified": 13,
+          "god_optative": 0,
+          "excluded": 30,
+          "subtypes": {
+            "IT_FORMULA": 4,
+            "PRON_2SG": 5,
+            "PRON_NON2": 1,
+            "FULL_NP_LEX": 3
+          },
+          "excl_breakdown": {
+            "EXCL_COMPOUND": 1,
+            "EXCL_META": 12,
+            "EXCL_NPI": 1,
+            "EXCL_VERB": 15,
+            "EXCL_WH_THE_FUCK": 1
+          },
+          "non_it_verified": 9,
+          "full_np_lex": 3
+        },
+        "sod": {
+          "raw": 4,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 3,
+          "subtypes": {
+            "FULL_NP_LEX": 1
+          },
+          "excl_breakdown": {
+            "EXCL_NOUN": 2,
+            "EXCL_NPI": 1
+          },
+          "non_it_verified": 1,
+          "full_np_lex": 1
+        },
+        "bugger": {
+          "raw": 1,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {
+            "FULL_NP_LEX": 1
+          },
+          "excl_breakdown": {},
+          "non_it_verified": 1,
+          "full_np_lex": 1
+        },
+        "screw": {
+          "raw": 19,
+          "bare_verified": 6,
+          "god_optative": 0,
+          "excluded": 13,
+          "subtypes": {
+            "IT_FORMULA": 3,
+            "FULL_NP_LEX": 3
+          },
+          "excl_breakdown": {
+            "EXCL_META": 3,
+            "EXCL_NOUN": 1,
+            "EXCL_VERB": 9
+          },
+          "non_it_verified": 3,
+          "full_np_lex": 3
+        },
+        "blast": {
+          "raw": 23,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 23,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 8,
+            "EXCL_VERB": 15
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "curse": {
+          "raw": 9,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 9,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_META": 2,
+            "EXCL_NOUN": 5,
+            "EXCL_VERB": 2
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "hang": {
+          "raw": 33,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 32,
+          "subtypes": {
+            "PRON_NON2": 1
+          },
+          "excl_breakdown": {
+            "EXCL_VERB": 32
+          },
+          "non_it_verified": 1,
+          "full_np_lex": 0
+        },
+        "drat": {
+          "raw": 1,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 1,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_META": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "darn": {
+          "raw": 2,
+          "bare_verified": 1,
+          "god_optative": 0,
+          "excluded": 1,
+          "subtypes": {
+            "IT_FORMULA": 1
+          },
+          "excl_breakdown": {
+            "EXCL_VERB": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dash": {
+          "raw": 1,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 1,
+          "subtypes": {},
+          "excl_breakdown": {
+            "EXCL_NOUN": 1
+          },
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        },
+        "dang": {
+          "raw": 0,
+          "bare_verified": 0,
+          "god_optative": 0,
+          "excluded": 0,
+          "subtypes": {},
+          "excl_breakdown": {},
+          "non_it_verified": 0,
+          "full_np_lex": 0
+        }
+      },
+      "totals": {
+        "raw": 217,
+        "bare_verified": 64,
+        "god_optative": 13,
+        "excluded": 140,
+        "IT_FORMULA": 15,
+        "ROUTINE_BLESS_YOU": 4,
+        "PRON_2SG": 5,
+        "PRON_NON2": 6,
+        "DEM_OBJ": 0,
+        "POSS_BODY": 22,
+        "FULL_NP_LEX": 12
+      },
+      "prosody_verified": {},
+      "prosody_standalone": {}
+    },
+    "pooled_dedup": {
+      "damn": {
+        "raw": 80,
+        "bare_verified": 33,
+        "god_optative": 3,
+        "excluded": 44,
+        "subtypes": {
+          "IT_FORMULA": 17,
+          "PRON_2SG": 7,
+          "PRON_NON2": 2,
+          "FULL_NP_LEX": 7
+        },
+        "uk_bare": 22,
+        "us_bare": 11,
+        "uk_god": 0,
+        "us_god": 3
+      },
+      "bless": {
+        "raw": 124,
+        "bare_verified": 82,
+        "god_optative": 20,
+        "excluded": 22,
+        "subtypes": {
+          "ROUTINE_BLESS_YOU": 31,
+          "PRON_NON2": 18,
+          "POSS_BODY": 31,
+          "FULL_NP_LEX": 1,
+          "IT_FORMULA": 1
+        },
+        "uk_bare": 52,
+        "us_bare": 30,
+        "uk_god": 10,
+        "us_god": 10
+      },
+      "fuck": {
+        "raw": 101,
+        "bare_verified": 46,
+        "god_optative": 0,
+        "excluded": 55,
+        "subtypes": {
+          "IT_FORMULA": 17,
+          "PRON_2SG": 10,
+          "PRON_NON2": 9,
+          "DEM_OBJ": 5,
+          "FULL_NP_LEX": 5
+        },
+        "uk_bare": 33,
+        "us_bare": 13,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "sod": {
+        "raw": 29,
+        "bare_verified": 21,
+        "god_optative": 0,
+        "excluded": 8,
+        "subtypes": {
+          "IT_FORMULA": 8,
+          "PRON_2SG": 2,
+          "PRON_NON2": 4,
+          "DEM_OBJ": 3,
+          "FULL_NP_LEX": 4
+        },
+        "uk_bare": 20,
+        "us_bare": 1,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "bugger": {
+        "raw": 43,
+        "bare_verified": 21,
+        "god_optative": 0,
+        "excluded": 22,
+        "subtypes": {
+          "IT_FORMULA": 7,
+          "PRON_NON2": 10,
+          "DEM_OBJ": 2,
+          "FULL_NP_LEX": 2
+        },
+        "uk_bare": 20,
+        "us_bare": 1,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "screw": {
+        "raw": 42,
+        "bare_verified": 13,
+        "god_optative": 0,
+        "excluded": 29,
+        "subtypes": {
+          "PRON_2SG": 3,
+          "PRON_NON2": 1,
+          "DEM_OBJ": 1,
+          "FULL_NP_LEX": 5,
+          "IT_FORMULA": 3
+        },
+        "uk_bare": 7,
+        "us_bare": 6,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "blast": {
+        "raw": 49,
+        "bare_verified": 1,
+        "god_optative": 0,
+        "excluded": 48,
+        "subtypes": {
+          "IT_FORMULA": 1
+        },
+        "uk_bare": 1,
+        "us_bare": 0,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "curse": {
+        "raw": 14,
+        "bare_verified": 0,
+        "god_optative": 0,
+        "excluded": 14,
+        "subtypes": {},
+        "uk_bare": 0,
+        "us_bare": 0,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "hang": {
+        "raw": 103,
+        "bare_verified": 1,
+        "god_optative": 0,
+        "excluded": 102,
+        "subtypes": {
+          "PRON_NON2": 1
+        },
+        "uk_bare": 0,
+        "us_bare": 1,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "drat": {
+        "raw": 1,
+        "bare_verified": 0,
+        "god_optative": 0,
+        "excluded": 1,
+        "subtypes": {},
+        "uk_bare": 0,
+        "us_bare": 0,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "darn": {
+        "raw": 6,
+        "bare_verified": 2,
+        "god_optative": 0,
+        "excluded": 4,
+        "subtypes": {
+          "IT_FORMULA": 2
+        },
+        "uk_bare": 1,
+        "us_bare": 1,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "dash": {
+        "raw": 4,
+        "bare_verified": 0,
+        "god_optative": 0,
+        "excluded": 4,
+        "subtypes": {},
+        "uk_bare": 0,
+        "us_bare": 0,
+        "uk_god": 0,
+        "us_god": 0
+      },
+      "dang": {
+        "raw": 0,
+        "bare_verified": 0,
+        "god_optative": 0,
+        "excluded": 0,
+        "subtypes": {},
+        "uk_bare": 0,
+        "us_bare": 0,
+        "uk_god": 0,
+        "us_god": 0
+      }
+    }
+  },
+  "primary_comparators": {
+    "cabnc_raw": 23,
+    "cabnc_verified_np_complement": 0,
+    "cabnc_boundary_cues": {
+      "no_cue": 14,
+      "cue": 9
+    },
+    "cabnc_verbless_detached": [
+      "Ouch My foot"
+    ],
+    "bnc_raw_all": 36,
+    "bnc_raw_non_overlap": 16,
+    "bnc_verified_np_complement": 0,
+    "oanc_raw": 109,
+    "oanc_verified_np_complement": 0
+  },
+  "tests": {
+    "cabnc_unit_boundary_verified_vs_primary6": {
+      "verified_cue": 0,
+      "verified_nocue": 80,
+      "primary6_cue": 9,
+      "primary6_nocue": 14,
+      "fisher_two_sided_p": 3.256112962769746e-07
+    },
+    "cabnc_unit_boundary_nonroutine_vs_primary6": {
+      "nonroutine_cue": 0,
+      "nonroutine_nocue": 66,
+      "primary6_cue": 9,
+      "primary6_nocue": 14,
+      "fisher_two_sided_p": 1.2856433811999516e-06
+    },
+    "cabnc_unit_boundary_verified_vs_standalone_same_heads": {
+      "verified_cue": 0,
+      "verified_nocue": 80,
+      "standalone_cue": 4,
+      "standalone_nocue": 3,
+      "fisher_two_sided_p": 1.572401213893737e-05
+    },
+    "h1b_god_optative_bless_vs_all_maledictives": {
+      "bless_god": 20,
+      "bless_bare": 82,
+      "mal_god": 3,
+      "mal_bare": 138,
+      "fisher_two_sided_p": 5.844508343209523e-06
+    },
+    "h1b_god_optative_damn_vs_other_maledictives": {
+      "damn_god": 3,
+      "damn_bare": 33,
+      "other_mal_god": 0,
+      "other_mal_bare": 105,
+      "fisher_two_sided_p": 0.01561304148170825
+    }
+  },
+  "outside_construction_counts": {
+    "cabnc_ed": {
+      "dashed": 2,
+      "blessed": 20,
+      "blasted": 15,
+      "damned": 6,
+      "darned": 2
+    },
+    "bnc_full_ed": {
+      "cursed": 23,
+      "dashed": 25,
+      "blasted": 31,
+      "damned": 60,
+      "blessed": 30,
+      "dratted": 1,
+      "darned": 1
+    },
+    "oanc_ed": {
+      "blessed": 114,
+      "blasted": 40,
+      "darned": 35,
+      "cursed": 21,
+      "damned": 89,
+      "dashed": 51
+    },
+    "cabnc_outside_attr_adv": {
+      "damn": 56,
+      "dash": 5,
+      "dashed": 2,
+      "darned": 2,
+      "darn": 1
+    },
+    "bnc_full_outside_attr_adv": {
+      "dashed": 25,
+      "damn": 86,
+      "darn": 5,
+      "dratted": 1,
+      "darned": 1
+    },
+    "oanc_outside_attr_adv": {
+      "dang": 1,
+      "darned": 35,
+      "darn": 26,
+      "dash": 11,
+      "dashed": 51
+    },
+    "univerbated": {
+      "cabnc": {},
+      "bnc_full": {
+        "dammit": 6
+      },
+      "oanc": {
+        "dammit": 9,
+        "goddammit": 3
+      }
+    }
+  },
+  "coca_pilot": {
+    "file": "coca-2026-11-22-pilot-dang.txt",
+    "sections": {}
+  }
+}

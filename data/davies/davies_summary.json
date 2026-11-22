@@ -1,0 +1,366 @@
+{
+  "tv_corpus_325m": {
+    "T1a_by_head": {
+      "damn": 20107,
+      "fuck": 1842,
+      "screw": 1625,
+      "hang": 634,
+      "darn": 613,
+      "dang": 553,
+      "blast": 234,
+      "sod": 129,
+      "dash": 65,
+      "bless": 51,
+      "bugger": 41,
+      "curse": 15,
+      "drat": 7
+    },
+    "T1b_univerb": {
+      "dammit": 1694,
+      "goddammit": 310
+    },
+    "T2_by_head": {
+      "fuck": 6869,
+      "bless": 2431,
+      "screw": 1936,
+      "damn": 1400,
+      "hang": 344,
+      "curse": 247,
+      "blast": 127,
+      "sod": 26,
+      "darn": 25,
+      "bugger": 16,
+      "drat": 6,
+      "dash": 4,
+      "dang": 4
+    },
+    "T3_by_head": {
+      "fuck": 3237,
+      "screw": 1212,
+      "hang": 1005,
+      "bless": 1223,
+      "damn": 295,
+      "blast": 318,
+      "bugger": 67,
+      "curse": 120,
+      "sod": 27,
+      "dash": 12,
+      "darn": 12,
+      "dang": 4,
+      "drat": 2
+    },
+    "T4_total": 3605,
+    "T4_unique_types": 2178,
+    "T4_top100_by_head": {
+      "fuck": 419,
+      "bless": 236,
+      "curse": 42,
+      "damn": 86,
+      "screw": 147,
+      "darn": 17,
+      "blast": 26,
+      "hang": 60,
+      "sod": 7
+    },
+    "T5_total": 2228,
+    "T5_unique_types": 1082,
+    "T5_top100_by_head": {
+      "bless": 371,
+      "hang": 167,
+      "fuck": 337,
+      "damn": 48,
+      "screw": 79,
+      "blast": 47,
+      "darn": 6,
+      "curse": 12
+    },
+    "T6_god_by_head": {
+      "damn": 2229,
+      "bless": 1802,
+      "dang": 28,
+      "darn": 11,
+      "curse": 9,
+      "blast": 3,
+      "fuck": 2
+    },
+    "T6_total": 4084,
+    "T8a_coord_forms": [
+      {
+        "form": "DAMN AND BLAST IT",
+        "freq": 8
+      },
+      {
+        "form": "BLAST AND DAMN IT",
+        "freq": 2
+      },
+      {
+        "form": "DAMN AND BLAST YOU",
+        "freq": 1
+      }
+    ],
+    "T8a_kwic_regions": {
+      "UK/IE": 7
+    },
+    "h1b_tv_tests": {
+      "bless_god": 1802,
+      "bless_pron_total": 3705,
+      "damn_god": 2229,
+      "damn_pron_total": 21802,
+      "taboo4_god": 2,
+      "taboo4_pron_total": 17027,
+      "fisher_p_bless_vs_taboo4": 0.0,
+      "fisher_p_damn_vs_taboo4": 0.0
+    }
+  },
+  "tv_t7a_vs_t7b_double_dissociation": {
+    "T7a_freq_by_head": {
+      "damn": 101,
+      "dang": 1,
+      "blast": 2
+    },
+    "T7a_kwic_audit": {
+      "god_optative": 5,
+      "bare_np_imprecative": 75,
+      "excl_finite_verb": 4,
+      "excl_literal_verb": 1
+    },
+    "T7a_kwic_bare_by_head": {
+      "dang": 1,
+      "damn": 73,
+      "blast": 1
+    },
+    "T7b_freq_by_head": {
+      "bless": 28,
+      "screw": 22,
+      "damn": 15,
+      "fuck": 30,
+      "curse": 3,
+      "darn": 1
+    },
+    "T7b_types_by_head": {
+      "bless": 20,
+      "screw": 17,
+      "damn": 11,
+      "fuck": 25,
+      "curse": 3,
+      "darn": 1
+    },
+    "T7b_kwic_audit": {
+      "bare_np_imprecative": 53,
+      "god_optative": 14,
+      "excl_finite_or_nom": 5
+    },
+    "T7b_kwic_bare_by_head": {
+      "fuck": 20,
+      "screw": 14,
+      "bless": 6,
+      "damn": 11,
+      "curse": 1,
+      "darn": 1
+    },
+    "T7b_kwic_god_by_head": {
+      "bless": 12,
+      "damn": 2
+    },
+    "fisher_p_freq_dissociation": 7.75981205290869e-40,
+    "fisher_p_kwic_bare_dissociation": 2.5317444177938727e-22
+  },
+  "tv_t8b_primary_control": {
+    "total_raw": 76,
+    "kwic_audited": 53,
+    "wow_transitive_verb": 75,
+    "ouch_modal_coerced_verb": 1,
+    "oops_ugh_whoops_yuck_acc": 0,
+    "verified_bare_np_complements": 0
+  },
+  "glowbe_1_9b": {
+    "G1_minced_full_np": {
+      "total_reported": 149,
+      "breakdown": {
+        "dash_literal_or_wae_excluded": 87,
+        "darn_imprecative_verified": 47,
+        "darn_literal_mending_excluded": 4,
+        "dang_imprecative_verified": 11
+      },
+      "verified_non_dash_tokens": 58,
+      "verified_non_dash_types": 53,
+      "by_head_verified_tokens": {
+        "darn": 47,
+        "dang": 11
+      },
+      "by_head_verified_types": {
+        "darn": 42,
+        "dang": 11
+      },
+      "by_head_regions": {
+        "darn": {
+          "US": 18,
+          "NZ": 1,
+          "GB": 6,
+          "CA": 5,
+          "NG": 1,
+          "IN": 2,
+          "TZ": 1,
+          "PH": 2,
+          "SG": 3,
+          "KE": 1,
+          "ZA": 1,
+          "GH": 1,
+          "HK": 2,
+          "AU": 2,
+          "MY": 1
+        },
+        "dang": {
+          "MY": 1,
+          "SG": 3,
+          "CA": 1,
+          "US": 4,
+          "HK": 1,
+          "PK": 1
+        }
+      },
+      "darn_examples": [
+        "DARN THE LUCK",
+        "DARN MY EYES",
+        "DARN THAT LADY",
+        "DARN YOUR SERIES",
+        "DARN YOUR MOM",
+        "DARN THOSE YEARS",
+        "DARN THOSE NATS",
+        "DARN THOSE KIDS",
+        "DARN THOSE FACTS",
+        "DARN THOSE COMMIES",
+        "DARN THOSE BASTARDS",
+        "DARN THIS SITE",
+        "DARN THIS MYSTERY",
+        "DARN THIS LIFE",
+        "DARN THIS GUY",
+        "DARN THIS COLD",
+        "DARN THESE GUYS",
+        "DARN THESE FILIPINAS",
+        "DARN THE WRITERS",
+        "DARN THE TTC"
+      ],
+      "dang_examples": [
+        "DANG THOSE PUPPY",
+        "DANG THOSE PLANS",
+        "DANG THOSE ATHENS",
+        "DANG THIS SWARM",
+        "DANG THIS REVIST",
+        "DANG THIS POST",
+        "DANG THIS DRAMA",
+        "DANG THIS CHARACTER",
+        "DANG THESE WOMEN",
+        "DANG THESE TEMPTATIONS",
+        "DANG THE MANAGER"
+      ]
+    },
+    "G2_minced_acc_pron": {
+      "total_reported": 113,
+      "by_head_raw": {
+        "dash": 87,
+        "dang": 11,
+        "darn": 13,
+        "drat": 2
+      },
+      "clean_non_dash_minced_acc_tokens": 26,
+      "dash_total": 87,
+      "dash_ng_gh_tokens": 31,
+      "dash_ng_gh_share": 0.3563218390804598,
+      "by_head_regions": {
+        "dash": {
+          "US": 19,
+          "CA": 4,
+          "GB": 5,
+          "IE": 1,
+          "AU": 4,
+          "NZ": 4,
+          "IN": 1,
+          "LK": 6,
+          "PK": 1,
+          "NG": 26,
+          "KE": 2,
+          "TZ": 2,
+          "JM": 6,
+          "GH": 5,
+          "SG": 1
+        },
+        "dang": {
+          "GB": 1,
+          "IE": 1,
+          "NZ": 1,
+          "HK": 6,
+          "ZA": 1,
+          "JM": 1
+        },
+        "darn": {
+          "CA": 1,
+          "AU": 1,
+          "NZ": 3,
+          "SG": 2,
+          "US": 5,
+          "GB": 1
+        },
+        "drat": {
+          "NZ": 1,
+          "GB": 1
+        }
+      }
+    },
+    "G3_outside_mirroring": {
+      "G3a_attributive_top100": {
+        "total_top100": 280,
+        "by_head": {
+          "damn": 234,
+          "darn": 32,
+          "darned": 8,
+          "dang": 4,
+          "dratted": 2
+        },
+        "by_head_us_ca": {
+          "damn": 105,
+          "darn": 21,
+          "darned": 0,
+          "dang": 3,
+          "dratted": 0
+        },
+        "by_head_gb_ie": {
+          "damn": 49,
+          "darn": 4,
+          "darned": 1,
+          "dang": 0,
+          "dratted": 0
+        }
+      },
+      "G3b_adverbial_top100": {
+        "total_top100": 10794,
+        "by_head": {
+          "damn": 8742,
+          "darn": 1880,
+          "darned": 117,
+          "dang": 55
+        },
+        "by_head_us_ca": {
+          "damn": 3488,
+          "darn": 975,
+          "darned": 69,
+          "dang": 45
+        },
+        "by_head_gb_ie": {
+          "damn": 2119,
+          "darn": 316,
+          "darned": 25,
+          "dang": 5
+        }
+      }
+    },
+    "G4_finite_curse_verb_minced": 0,
+    "h2_vs_h4_minced_clean_summary": {
+      "darn_dang_drat_full_np_verified_top100": 58,
+      "darn_dang_drat_full_np_types_top100": 53,
+      "darn_dang_drat_acc_pron_tokens": 26,
+      "total_in_construction_tokens": 84,
+      "G4_finite_infinitival_curse_verb_tokens": 0
+    }
+  }
+}
