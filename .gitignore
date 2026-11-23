@@ -28,6 +28,7 @@ data/local/*_raw_extract.json
 data/davies/*-raw.txt
 data/davies/tv_t1a_to_t8a_parsed.json
 data/davies/coca-*.txt
+data/bnc2014/raw/
 
 # Internal review simulations and raw agent outputs (never publish)
 reviews/

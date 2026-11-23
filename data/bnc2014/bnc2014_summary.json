@@ -1,0 +1,115 @@
+{
+  "corpus": "Spoken BNC2014 (Sketch Engine preloaded/bnc2014_spoken_tt3)",
+  "est_tokens": 11832919,
+  "B2_1a_raw_total": 1311,
+  "B2_1a_by_head": {
+    "bless": 502,
+    "fuck": 457,
+    "damn": 167,
+    "hang": 60,
+    "screw": 50,
+    "bugger": 27,
+    "sod": 26,
+    "blast": 13,
+    "curse": 4,
+    "darn": 3,
+    "dash": 2
+  },
+  "B2_1a_key_pairs": {
+    "bless her": 185,
+    "bless him": 173,
+    "damn it": 140,
+    "fuck it": 138,
+    "fuck you": 94,
+    "bless you": 92,
+    "fuck that": 75,
+    "fuck me": 65,
+    "bugger me": 4,
+    "sod it": 16,
+    "screw it": 21
+  },
+  "B2_1b_dammit": 12,
+  "B2_1a_low_freq_22_audited": {
+    "darn": {
+      "excl_literal_mending": 1,
+      "verified_it": 2
+    },
+    "blast": {
+      "excl_literal_verb": 13
+    },
+    "dash": {
+      "excl_literal_verb": 1,
+      "verified_it": 1
+    },
+    "curse": {
+      "excl_finite_verb": 3,
+      "verified_full_np": 1
+    }
+  },
+  "B2_1a_det_poss_100_audited": {
+    "excl_literal_verb": 26,
+    "verified_poss_body": 2,
+    "excl_standalone_clause": 12,
+    "verified_dem": 32,
+    "excl_finite_literal": 1,
+    "verified_full_np": 5,
+    "excl_wh_the_fuck": 7,
+    "verified_poss_fml": 9,
+    "excl_as_fuck": 3,
+    "verified_full_np_quoted": 1,
+    "excl_standalone_fragment": 1,
+    "excl_noun_screw": 1
+  },
+  "B2_1a_det_poss_verified_excl_quote": 48,
+  "B2_2_euphemisms_11_audited": {
+    "raw": 11,
+    "verified_subjectless": 0,
+    "breakdown": {
+      "excl_literal_noun_fudge": 7,
+      "excl_literal_verb_fudge": 2,
+      "excl_standalone_frig_clause": 1,
+      "excl_wh_the_frig": 1
+    }
+  },
+  "B2_3_god_17": {
+    "raw": 17,
+    "god_damn_it": 10,
+    "god_bless_non_it": 5,
+    "excl_oh_god_plus_fuck": 2,
+    "verified_theological": 15,
+    "verified_secular": 0
+  },
+  "B2_4a_to_hell": {
+    "raw": 1,
+    "verified": 1,
+    "head": "damn",
+    "text_id": "SAZX"
+  },
+  "B2_4b_for_ving": {
+    "raw": 3,
+    "verified": 3,
+    "heads": {
+      "bless": 2,
+      "damn": 1
+    },
+    "text_ids": [
+      "S96L",
+      "SD92",
+      "SXEV"
+    ]
+  },
+  "B2_5a_confound": {
+    "raw": 1,
+    "verified": 1,
+    "item": "confound it",
+    "text_id": "SA9P"
+  },
+  "B2_5b_yay_boo": {
+    "raw": 17,
+    "verified_subjectless_complement": 0,
+    "breakdown": {
+      "excl_clause": 14,
+      "excl_detached_np": 3
+    }
+  }
+}
