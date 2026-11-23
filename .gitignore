@@ -29,7 +29,9 @@ data/davies/*-raw.txt
 data/davies/tv_t1a_to_t8a_parsed.json
 data/davies/coca-*.txt
 data/bnc2014/raw/
+data/spoken-bnc2014/
 
-# Internal review simulations and raw agent outputs (never publish)
+# Internal review simulations, submission staging, and raw agent outputs (never publish)
 reviews/
+submission/
 notes/private/
