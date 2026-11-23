@@ -1,0 +1,54 @@
+{
+  "C1a_finite_fuck_screw_for_ving": 0,
+  "C1b_phrasal_screw_over_for_ving": {
+    "raw_lines": 2,
+    "unique_utterances": 1,
+    "show": "The Quad"
+  },
+  "C2a_thank_pron_for_ving": {
+    "total_tokens": 15929,
+    "displayed_types": 667
+  },
+  "C2b_f1a_base_denominators": {
+    "total": 3261,
+    "by_head": {
+      "lucky": 2624,
+      "silly": 310,
+      "poor": 249,
+      "yay": 36,
+      "boo": 42
+    }
+  },
+  "C3a_all_both_to_hell": {
+    "raw_total": 21,
+    "raw_damn": 20,
+    "raw_blast_literal": 1,
+    "kwic_audited": 20,
+    "bare_direct_damn": 10,
+    "quoted_damn": 1,
+    "god_damn": 3,
+    "finite_modal_damn": 5,
+    "literal_blast": 1,
+    "other_heads": 0
+  },
+  "C3b_all_both_for_ving": {
+    "raw_total": 12,
+    "kwic_audited": 11,
+    "bare_by_head": {
+      "fuck": 3,
+      "bless": 5,
+      "damn": 1
+    },
+    "god_bless": 2,
+    "unique_fuck_shows": 2
+  },
+  "C4_glowbe_g4_positive_control": {
+    "total": 297,
+    "by_lemma": {
+      "cursed": 288,
+      "damned": 9
+    },
+    "types": 35,
+    "varieties_attested": 20
+  }
+}
