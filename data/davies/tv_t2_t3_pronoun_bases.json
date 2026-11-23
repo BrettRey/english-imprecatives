@@ -1,0 +1,100 @@
+{
+ "T2_you": {
+  "blast": 127,
+  "bless": 2431,
+  "bugger": 16,
+  "curse": 247,
+  "damn": 1400,
+  "dang": 4,
+  "darn": 25,
+  "dash": 4,
+  "drat": 6,
+  "fuck": 6869,
+  "hang": 344,
+  "screw": 1936,
+  "sod": 26
+ },
+ "T3_by_pronoun": {
+  "blast": {
+   "her": 30,
+   "him": 118,
+   "me": 40,
+   "them": 82,
+   "us": 48
+  },
+  "bless": {
+   "her": 296,
+   "him": 298,
+   "me": 295,
+   "them": 88,
+   "us": 246
+  },
+  "bugger": {
+   "him": 3,
+   "me": 58,
+   "them": 5,
+   "us": 1
+  },
+  "curse": {
+   "her": 4,
+   "him": 26,
+   "me": 55,
+   "them": 21,
+   "us": 14
+  },
+  "damn": {
+   "her": 40,
+   "him": 122,
+   "me": 61,
+   "them": 65,
+   "us": 7
+  },
+  "dang": {
+   "me": 3,
+   "them": 1
+  },
+  "darn": {
+   "her": 5,
+   "him": 1,
+   "me": 4,
+   "them": 2
+  },
+  "dash": {
+   "her": 2,
+   "me": 1,
+   "them": 8,
+   "us": 1
+  },
+  "drat": {
+   "me": 2
+  },
+  "fuck": {
+   "her": 523,
+   "him": 589,
+   "me": 1841,
+   "them": 221,
+   "us": 63
+  },
+  "hang": {
+   "her": 80,
+   "him": 396,
+   "me": 276,
+   "them": 188,
+   "us": 65
+  },
+  "screw": {
+   "her": 159,
+   "him": 309,
+   "me": 451,
+   "them": 189,
+   "us": 104
+  },
+  "sod": {
+   "her": 5,
+   "him": 12,
+   "me": 2,
+   "them": 8
+  }
+ },
+ "source": "TV Corpus T2 (HEAD you) and T3 (HEAD him|her|them|me|us) full frequency tables, aggregate counts only"
+}

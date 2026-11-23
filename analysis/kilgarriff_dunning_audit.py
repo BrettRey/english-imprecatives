@@ -61,25 +61,45 @@ def binom_zero_upper_95(n: int) -> float:
     return 1.0 - (0.05 ** (1.0 / n))
 
 
+TV_BASES = ROOT / "data" / "davies" / "tv_t2_t3_pronoun_bases.json"
+SHARED_PRONOUNS = ("you", "him", "her", "them")
+
+
+def shared_pronoun_bases():
+    """Raw T2 (HEAD you) + T3 (HEAD him/her/them) per head, from the aggregate
+    TV frequency tables in data/davies/tv_t2_t3_pronoun_bases.json. T3 also
+    queried me/us, which the shared-pronoun T7 numerators exclude, so those
+    strings are dropped to match denominator to numerator (2026-11-23)."""
+    d = json.loads(TV_BASES.read_text())
+    t2 = Counter(d["T2_you"])
+    t3_shared, t3_me_us = Counter(), Counter()
+    for head, by_pron in d["T3_by_pronoun"].items():
+        for pron, n in by_pron.items():
+            (t3_shared if pron in SHARED_PRONOUNS else t3_me_us)[head] += n
+    assert sum(t2.values()) == 13435 and sum(t3_shared.values()) + sum(t3_me_us.values()) == 7534  # Table 3 totals
+    return t2, t3_shared, t3_me_us
+
+
 def run_dunning_pp_analysis():
-    # From Table 3 (T2 + T3 raw pronoun hits) and Table 5 (T7a/T7b shared-pronoun audited)
-    # Note: T2+T3 denominators are raw (include literal uses on homophonous heads).
+    # Numerators: Table 5 (T7a/T7b shared-pronoun audited tokens).
+    # Denominators: raw T2 + T3 restricted to you/him/her/them (include literal
+    # uses on homophonous heads).
+    numerators = {
+        "damn": (32, 11), "fuck": (0, 17), "screw": (0, 13), "bless": (0, 6),
+        "curse": (0, 1), "darn": (0, 1), "blast": (1, 0), "sod": (0, 0), "bugger": (0, 0),
+    }
+    t2, t3s, t3mu = shared_pronoun_bases()
     heads = {
-        "damn": {"t2": 1400, "t3": 295, "to_hell_shared": 32, "for_ving_shared": 11},
-        "fuck": {"t2": 6869, "t3": 3237, "to_hell_shared": 0, "for_ving_shared": 17},
-        "screw": {"t2": 1936, "t3": 1212, "to_hell_shared": 0, "for_ving_shared": 13},
-        "bless": {"t2": 2431, "t3": 1223, "to_hell_shared": 0, "for_ving_shared": 6},
-        "curse": {"t2": 247, "t3": 120, "to_hell_shared": 0, "for_ving_shared": 1},
-        "darn": {"t2": 25, "t3": 12, "to_hell_shared": 0, "for_ving_shared": 1},
-        "blast": {"t2": 127, "t3": 318, "to_hell_shared": 1, "for_ving_shared": 0},
-        "sod": {"t2": 26, "t3": 27, "to_hell_shared": 0, "for_ving_shared": 0},
-        "bugger": {"t2": 16, "t3": 67, "to_hell_shared": 0, "for_ving_shared": 0},
+        h: {"t2": t2[h], "t3": t3s[h], "t3_me_us_dropped": t3mu[h],
+            "to_hell_shared": th, "for_ving_shared": fv}
+        for h, (th, fv) in numerators.items()
     }
     per_head = {}
     for h, d in heads.items():
         denom = d["t2"] + d["t3"]
         per_head[h] = {
-            "t2_t3_raw": denom,
+            "t2_t3_shared_raw": denom,
+            "t3_me_us_dropped": d["t3_me_us_dropped"],
             "to_hell_shared": d["to_hell_shared"],
             "to_hell_per_1k": round(1000.0 * d["to_hell_shared"] / denom, 2),
             "for_ving_shared": d["for_ving_shared"],
@@ -87,9 +107,9 @@ def run_dunning_pp_analysis():
         }
 
     # 2x2 Dunning G^2: damn vs. (fuck + screw + bless) on to hell and for V-ing
-    damn_n = heads["damn"]["t2"] + heads["damn"]["t3"]  # 1,695
-    fsb_n = sum(heads[h]["t2"] + heads[h]["t3"] for h in ("fuck", "screw", "bless"))  # 16,908
-    fsb_for = sum(heads[h]["for_ving_shared"] for h in ("fuck", "screw", "bless"))  # 36
+    damn_n = heads["damn"]["t2"] + heads["damn"]["t3"]
+    fsb_n = sum(heads[h]["t2"] + heads[h]["t3"] for h in ("fuck", "screw", "bless"))
+    fsb_for = sum(heads[h]["for_ving_shared"] for h in ("fuck", "screw", "bless"))
 
     g2_to_hell_raw = dunning_g2(32, damn_n - 32, 0, fsb_n)
     # Conservative sensitivity: even if 50% of fuck+screw+bless T2+T3 were literal contamination
@@ -98,8 +118,8 @@ def run_dunning_pp_analysis():
     g2_for_ving_raw = dunning_g2(11, damn_n - 11, fsb_for, fsb_n - fsb_for)
 
     zeros = {
-        "to_hell_fsb_raw_16908": {"n": fsb_n, "upper_95_pct": round(100 * binom_zero_upper_95(fsb_n), 4)},
-        "to_hell_fsb_half_8454": {"n": fsb_n_half, "upper_95_pct": round(100 * binom_zero_upper_95(fsb_n_half), 4)},
+        "to_hell_fsb_shared": {"n": fsb_n, "upper_95_pct": round(100 * binom_zero_upper_95(fsb_n), 4)},
+        "to_hell_fsb_shared_half": {"n": fsb_n_half, "upper_95_pct": round(100 * binom_zero_upper_95(fsb_n_half), 4)},
         "tier1_primary6_148": {"n": 148, "upper_95_pct": round(100 * binom_zero_upper_95(148), 2)},
         "tv_primary6_53": {"n": 53, "upper_95_pct": round(100 * binom_zero_upper_95(53), 1)},
         "bnc2014_yay_boo_17": {"n": 17, "upper_95_pct": round(100 * binom_zero_upper_95(17), 1)},
@@ -110,8 +130,8 @@ def run_dunning_pp_analysis():
     return {
         "per_head_rates": per_head,
         "damn_vs_fsb_2x2": {
-            "damn_t2_t3": damn_n,
-            "fsb_t2_t3_raw": fsb_n,
+            "damn_t2_t3_shared": damn_n,
+            "fsb_t2_t3_shared_raw": fsb_n,
             "to_hell_g2_raw": round(g2_to_hell_raw, 1),
             "to_hell_g2_half_denom": round(g2_to_hell_half, 1),
             "for_ving_g2_raw": round(g2_for_ving_raw, 1),
@@ -167,10 +187,13 @@ def run_kilgarriff_calibration():
             "bnc14_observed": 3,
             "bnc14_pmw": round(3 / bnc_m, 2),
         },
+        # F3: 61 verified among 100 nonrandom displayed KWICs; 123 undisplayed.
+        # Deterministic bounds (61 to 61 + 123), not a projection of the
+        # display rate onto the raw total (2026-11-23).
         "fuck_euphemisms_f3": {
-            "tv_est_verified": round(223 * 0.61),
-            "tv_pmw_est": round((223 * 0.61) / tv_m, 2),
-            "bnc14_expected_at_tv_rate": round((223 * 0.61) / ratio_size, 1),
+            "tv_est_range": [61, 61 + (223 - 100)],
+            "tv_pmw_range": [round(61 / tv_m, 2), round((61 + 223 - 100) / tv_m, 2)],
+            "bnc14_expected_at_tv_rate": [round(61 / ratio_size, 1), round((61 + 223 - 100) / ratio_size, 1)],
             "bnc14_observed": 0,
             "bnc14_pmw": 0.0,
         },

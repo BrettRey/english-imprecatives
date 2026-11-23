@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\input{.house-style/preamble.tex}
+\usepackage{booktabs}
+\usepackage{array}
+\newcommand{\qsep}{\textbar\allowbreak}
+\renewcommand{\thetable}{S\arabic{table}}
+\title{Supplementary materials}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Corpus query strings and adjudication protocol}
+
+Table~\ref{tab:appendix-queries} lists all Mark Davies queries (TV Corpus 325M; GloWbE 1.9B; LIST view). Tier~1 scanned all 13 heads and 6 primary interjections before closed-class NP starters (CABNC, OANC) and any NP-starting CLAWS5 tag (\texttt{PNP}, \texttt{AT0}, \texttt{DPS}, \texttt{DT0}, \texttt{NP0}, \texttt{NN1}, \texttt{NN2}, \texttt{PNI}, \texttt{CRD}) in BNC Baby XML.
+
+Spoken BNC2014 (Sketch Engine \texttt{preloaded/bnc2014\_spoken\_tt3}, 11.83M tokens) ran eight lowercase CQL queries mirroring the same frames: \texttt{B2-1a} (\texttt{H13} + NP starters, 1,311 hits including 60 unaudited raw \mention{hang}; all 22 archaic/minced and 100/237 \texttt{DET/GEN} lines audited), \texttt{B2-1b} (\texttt{dammit\qsep{}goddammit}, 12), \texttt{B2-2} (6 \texttt{fuck}-euphemisms, all 11 audited), \texttt{B2-3} (\texttt{god} + heads, 17 hits: 10 \mention{god damn it} frequency-table strings and all 7 non-\mention{it} hits contextually audited), \texttt{B2-4a/b} (\texttt{to hell} [1] / \texttt{for .*ing} [3]), \texttt{B2-5a} (\texttt{confound}, 1), and \texttt{B2-5b} (\texttt{yay\qsep{}boo}, all 17 audited).
+
+\begin{table}[tbp]
+\centering
+\caption{Tier-2 Mark Davies query strings (T1a--T8b, F1a--F5c, C1a--C3b, D1--D4 on the TV Corpus; G1--G4, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
+\label{tab:appendix-queries}
+\scriptsize
+\renewcommand{\arraystretch}{0.88}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.8cm}>{\raggedright\arraybackslash}p{1.1cm}>{\raggedright\arraybackslash}p{7.0cm}>{\raggedright\arraybackslash}p{3.2cm}@{}}
+\toprule
+ID & Corpus & Query string & Audit scope \\
+\midrule
+\texttt{T1a} & TV & \texttt{H13 it} & Freq + 100 KWIC \\
+\texttt{T1b} & TV & \texttt{dammit\qsep{}goddammit} & Freq table \\
+\texttt{T2}  & TV & \texttt{H13 you} & Freq + 98 KWIC \\
+\texttt{T3}  & TV & \texttt{H13 him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Freq + 100 KWIC \\
+\texttt{T4}  & TV & \texttt{H13 the\qsep{}this\qsep{}that\qsep{}these\qsep{}those \_n*} & Top 100 + 100 KWIC \\
+\texttt{T5}  & TV & \texttt{H13 my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Top 100 + 100 KWIC \\
+\texttt{T6}  & TV & \texttt{god H13 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}us\qsep{}the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her} & Full freq + 100 KWIC \\
+\texttt{T7a} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full freq + all 85 KWIC \\
+\texttt{T7b} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq + all 72 KWIC \\
+\texttt{T8a} & TV & \texttt{H7 and H7 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq + all 7 KWIC \\
+\texttt{T8b} & TV & \texttt{ouch\qsep{}oops\qsep{}ugh\qsep{}wow\qsep{}whoops\qsep{}yuck him\qsep{}her\qsep{}them} & Full freq + all 53 KWIC \\
+\midrule
+\texttt{F1a} & TV & \texttt{silly\qsep{}lucky\qsep{}poor\qsep{}yay\qsep{}boo you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + all 2 KWIC \\
+\texttt{F1b} & TV & \texttt{shame\qsep{}good\qsep{}kudos on\qsep{}for\qsep{}to you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + 100 KWIC \\
+\texttt{F2}  & TV & \texttt{damn\qsep{}fuck\qsep{}screw\qsep{}sod\qsep{}bugger\qsep{}bless\qsep{}curse\qsep{}darn\qsep{}dang the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n* for \_v?g*} & Full freq + all 13 KWIC \\
+\texttt{F3}  & TV & \texttt{frig\qsep{}frick\qsep{}feck\qsep{}fudge\qsep{}frak\qsep{}eff it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}the\qsep{}this\qsep{}that} & Full freq + 100 KWIC \\
+\texttt{F4a} & TV & \texttt{god bless the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Full freq + 100 KWIC \\
+\texttt{F4b} & TV & \texttt{gosh\qsep{}gol\qsep{}gold\qsep{}dog\qsep{}god darn\qsep{}dang\qsep{}rot\qsep{}drat it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me} & Full freq + 100 KWIC \\
+\texttt{F5a} & TV & \texttt{be darned\qsep{}danged\qsep{}dratted\qsep{}buggered\qsep{}damned} & Full freq + 100 KWIC \\
+\texttt{F5b} & TV & \texttt{he\qsep{}she\qsep{}they\qsep{}i\qsep{}will\qsep{}would\qsep{}could\qsep{}to damn\qsep{}damns\qsep{}damned\qsep{}curse\qsep{}curses\qsep{}cursed\qsep{}darn\qsep{}darns\qsep{}darned\qsep{}dang\qsep{}dangs\qsep{}danged\qsep{}drat\qsep{}drats\qsep{}dratted him\qsep{}her\qsep{}them} & Full freq + all 49 KWIC \\
+\texttt{F5c} & TV & \texttt{dash it} & All 65 KWIC \\
+\midrule
+\texttt{C1a} & TV & \texttt{to\qsep{}will\qsep{}would\qsep{}could\qsep{}did\qsep{}didn't\qsep{}don't\qsep{}i\qsep{}he\qsep{}she\qsep{}they fuck\qsep{}fucked\qsep{}screw\qsep{}screwed you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full corpus (0 hits) \\
+\texttt{C1b} & TV & \texttt{fuck\qsep{}fucked\qsep{}screw\qsep{}screwed you\qsep{}him\qsep{}her\qsep{}them\qsep{}me over for \_v?g*} & Full freq + all 2 KWIC \\
+\texttt{C2a} & TV & \texttt{thank you\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Freq table (15,929) \\
+\texttt{C2b} & TV & \texttt{silly\qsep{}lucky\qsep{}poor\qsep{}yay\qsep{}boo you\qsep{}me\qsep{}him\qsep{}her\qsep{}them} & Full freq (3,261) \\
+\texttt{C3a} & TV & \texttt{damn\qsep{}fuck\qsep{}screw\qsep{}sod\qsep{}bugger\qsep{}blast\qsep{}curse\qsep{}bless\qsep{}darn\qsep{}dang\qsep{}eff\qsep{}frak you\qsep{}them\qsep{}us all\qsep{}both to hell} & Full freq + all 20 KWIC \\
+\texttt{C3b} & TV & \texttt{damn\qsep{}fuck\qsep{}screw\qsep{}sod\qsep{}bugger\qsep{}blast\qsep{}curse\qsep{}bless\qsep{}darn\qsep{}dang\qsep{}eff\qsep{}frak you\qsep{}them\qsep{}us all\qsep{}both for \_v?g*} & Full freq + all 11 KWIC \\
+\texttt{D1}  & TV & \texttt{fuck\qsep{}fucked\qsep{}screw\qsep{}screwed you\qsep{}him\qsep{}her\qsep{}them\qsep{}me up for \_v?g*} & Full freq + all 3 KWIC \\
+\texttt{D2a} & TV & \texttt{\_n* be darned\qsep{}danged} & Full freq + all 4 KWIC \\
+\texttt{D2b} & TV & \texttt{\_n* be damned\qsep{}buggered} & Full freq (175) + 100 KWIC \\
+\texttt{D3}  & TV & \texttt{yay\qsep{}boo the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Full freq + all 13 KWIC \\
+\texttt{D4}  & TV & \texttt{confound it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}the\qsep{}this\qsep{}that} & Full freq (122) + 100 KWIC \\
+\midrule
+\texttt{G1}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & Top 100 (20 varieties) \\
+\texttt{G2}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Full freq (20 varieties) \\
+\texttt{G3a} & GloWbE & \texttt{that damn\qsep{}darn\qsep{}dang\qsep{}dratted\qsep{}darned\qsep{}dashed\qsep{}danged \_n*} & Top 100 (20 varieties) \\
+\texttt{G3b} & GloWbE & \texttt{damn\qsep{}darn\qsep{}dang\qsep{}darned\qsep{}dratted\qsep{}danged \_j*} & Top 100 (20 varieties) \\
+\texttt{G4}  & GloWbE & \texttt{i\qsep{}you\qsep{}he\qsep{}she\qsep{}they\qsep{}we dratted\qsep{}danged\qsep{}darned it\qsep{}him\qsep{}her\qsep{}them\qsep{}the\qsep{}this\qsep{}that} & Full corpus (0 hits) \\
+\texttt{C4}  & GloWbE & \texttt{i\qsep{}you\qsep{}he\qsep{}she\qsep{}they\qsep{}we damned\qsep{}cursed it\qsep{}him\qsep{}her\qsep{}them\qsep{}the\qsep{}this\qsep{}that} & Full freq (297 hits) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Overt \mention{God} within \mention{bless}}
+
+This table supports the contrast reported in §5.2 of the article (80/86 vs.\ 12/272).
+
+\begin{table}[h]
+\centering
+\caption{Illustrative lexical contrast within \mention{bless} across eight high-frequency expressions in the TV Corpus (325M words): raw \texttt{T4}/\texttt{T5} totals, overt \mention{God bless} (\texttt{F4a}), and residual tokens without overt \mention{God} (\texttt{T4}/\texttt{T5} minus \texttt{F4a}).}
+\label{tab:bless-split}
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Illustrative set & Target string & Total (\texttt{T4}/\texttt{T5}) & Overt \mention{God} (\texttt{F4a}) & Without overt \mention{God}\textsuperscript{a} & \% Overt \mention{God} \\
+\midrule
+Civic / solemn & \mention{the United} [\mention{States}] & 43 & 42 &  1 & 98\% \\
+Civic / solemn & \mention{the child}\textsuperscript{b} & 26 & 23 &  3 & 88\% \\
+Civic / solemn & \mention{Your Majesty}        & 10 &  8 &  2 & 80\% \\
+Civic / solemn & \mention{the King}            &  7 &  7 &  0 & 100\% \\
+\cmidrule(lr){2-6}
+\textbf{Civic set (4 strings)} & & \textbf{86} & \textbf{80} & \textbf{6} & \textbf{93\%} \\
+\midrule
+Heart / soul idioms & \mention{your heart}     & 94 &  3 & 91 &  3\% \\
+Heart / soul idioms & \mention{her heart}      & 56 &  3 & 53 &  5\% \\
+Heart / soul idioms & \mention{his heart}      & 53 &  2 & 51 &  4\% \\
+Heart / soul idioms & \mention{my soul}        & 69 &  4 & 65 &  6\% \\
+\cmidrule(lr){2-6}
+\textbf{Idiom set (4 strings)} & & \textbf{272} & \textbf{12} & \textbf{260} & \textbf{4\%} \\
+\bottomrule
+\multicolumn{6}{@{}p{12.4cm}@{}}{\scriptsize \textsuperscript{a}Residual counts equal tokens without immediately preceding \mention{God}; because \texttt{T4}/\texttt{T5} are raw string totals, residuals can include ordinary verbal uses (e.g.\ liturgical \mention{to bless the child}) or alternative subjects (\mention{Lord bless}). \textsuperscript{b}Includes song-lyric echoes of \mention{God bless the child} (\mention{that's got his own}).}
+\end{tabular}
+\end{table}
+
+\end{document}

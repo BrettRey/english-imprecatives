@@ -2,63 +2,72 @@
   "dunning_pp": {
     "per_head_rates": {
       "damn": {
-        "t2_t3_raw": 1695,
+        "t2_t3_shared_raw": 1627,
+        "t3_me_us_dropped": 68,
         "to_hell_shared": 32,
-        "to_hell_per_1k": 18.88,
+        "to_hell_per_1k": 19.67,
         "for_ving_shared": 11,
-        "for_ving_per_1k": 6.49
+        "for_ving_per_1k": 6.76
       },
       "fuck": {
-        "t2_t3_raw": 10106,
+        "t2_t3_shared_raw": 8202,
+        "t3_me_us_dropped": 1904,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 17,
-        "for_ving_per_1k": 1.68
+        "for_ving_per_1k": 2.07
       },
       "screw": {
-        "t2_t3_raw": 3148,
+        "t2_t3_shared_raw": 2593,
+        "t3_me_us_dropped": 555,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 13,
-        "for_ving_per_1k": 4.13
+        "for_ving_per_1k": 5.01
       },
       "bless": {
-        "t2_t3_raw": 3654,
+        "t2_t3_shared_raw": 3113,
+        "t3_me_us_dropped": 541,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 6,
-        "for_ving_per_1k": 1.64
+        "for_ving_per_1k": 1.93
       },
       "curse": {
-        "t2_t3_raw": 367,
+        "t2_t3_shared_raw": 298,
+        "t3_me_us_dropped": 69,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 1,
-        "for_ving_per_1k": 2.72
+        "for_ving_per_1k": 3.36
       },
       "darn": {
-        "t2_t3_raw": 37,
+        "t2_t3_shared_raw": 33,
+        "t3_me_us_dropped": 4,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 1,
-        "for_ving_per_1k": 27.03
+        "for_ving_per_1k": 30.3
       },
       "blast": {
-        "t2_t3_raw": 445,
+        "t2_t3_shared_raw": 357,
+        "t3_me_us_dropped": 88,
         "to_hell_shared": 1,
-        "to_hell_per_1k": 2.25,
+        "to_hell_per_1k": 2.8,
         "for_ving_shared": 0,
         "for_ving_per_1k": 0.0
       },
       "sod": {
-        "t2_t3_raw": 53,
+        "t2_t3_shared_raw": 51,
+        "t3_me_us_dropped": 2,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 0,
         "for_ving_per_1k": 0.0
       },
       "bugger": {
-        "t2_t3_raw": 83,
+        "t2_t3_shared_raw": 24,
+        "t3_me_us_dropped": 59,
         "to_hell_shared": 0,
         "to_hell_per_1k": 0.0,
         "for_ving_shared": 0,
@@ -66,20 +75,20 @@
       }
     },
     "damn_vs_fsb_2x2": {
-      "damn_t2_t3": 1695,
-      "fsb_t2_t3_raw": 16908,
-      "to_hell_g2_raw": 153.9,
-      "to_hell_g2_half_denom": 115.0,
-      "for_ving_g2_raw": 8.5
+      "damn_t2_t3_shared": 1627,
+      "fsb_t2_t3_shared_raw": 13908,
+      "to_hell_g2_raw": 145.0,
+      "to_hell_g2_half_denom": 106.9,
+      "for_ving_g2_raw": 6.5
     },
     "zero_upper_bounds_95": {
-      "to_hell_fsb_raw_16908": {
-        "n": 16908,
-        "upper_95_pct": 0.0177
+      "to_hell_fsb_shared": {
+        "n": 13908,
+        "upper_95_pct": 0.0215
       },
-      "to_hell_fsb_half_8454": {
-        "n": 8454,
-        "upper_95_pct": 0.0354
+      "to_hell_fsb_shared_half": {
+        "n": 6954,
+        "upper_95_pct": 0.0431
       },
       "tier1_primary6_148": {
         "n": 148,
@@ -189,9 +198,18 @@
         "bnc14_pmw": 0.25
       },
       "fuck_euphemisms_f3": {
-        "tv_est_verified": 136,
-        "tv_pmw_est": 0.42,
-        "bnc14_expected_at_tv_rate": 5.0,
+        "tv_est_range": [
+          61,
+          184
+        ],
+        "tv_pmw_range": [
+          0.19,
+          0.57
+        ],
+        "bnc14_expected_at_tv_rate": [
+          2.2,
+          6.7
+        ],
         "bnc14_observed": 0,
         "bnc14_pmw": 0.0
       }

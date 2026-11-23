@@ -2,11 +2,11 @@
 slug: english-imprecatives
 kind: paper
 title: 'The Grammar of English Subjectless Imprecatives and Benedictives: Lexical Asymmetries, Evaluative Modification, and Euphemistic Inheritance'
-stage: submission_ready_gelman_b1_b2_complete
+stage: draft_calibration_edit_unreviewed
 external: https://github.com/BrettRey/english-imprecatives
-blocked_on: []
+blocked_on: [brett-review]
 updated: 2026-11-23
-next_action: 'Brett conducts final submission inspection of english-imprecatives.pdf (9,915 inclusive words) and english-imprecatives-blind.pdf (9,916 words) for English Language and Linguistics.'
+next_action: 'Brett reviews the 2026-11-23 table cuts, data corrections and calibration edit (17 pp., about 7,740 words; supplement 3 pp.; see DECISIONS.md); then rebuild submission/ell-2026-11-23/ and commit.'
 ---
 
 # STATUS.md: English Subjectless Imprecatives and Benedictives
