@@ -1,0 +1,175 @@
+{
+  "D1": {
+    "raw_tokens": 3,
+    "kwic_audited": 3,
+    "verified_particle_verb_retaliatory": 3,
+    "distinct_shows": 3,
+    "shows": [
+      "Crash",
+      "Survivor's Remorse",
+      "United States of Tara"
+    ],
+    "items": [
+      [
+        "Survivor's Remorse",
+        2015,
+        "car dealer who don't like your mother's pussy. I'm about to fuck him up for making Ma feel like her pussy's handicapped. Okay, okay"
+      ],
+      [
+        "United States of Tara",
+        2010,
+        "Buck you came over here and you did this to me, and he will fuck you up for hurting me. He promised he'd never let anyone hurt me"
+      ],
+      [
+        "Crash",
+        2008,
+        "what you're talking about. None. What are you doing? I should fuck you up for dragging me into your bullshit. What are you talking about?"
+      ]
+    ]
+  },
+  "D2a": {
+    "raw_tokens": 4,
+    "kwic_audited": 4,
+    "verified_nominal_dismissals": 1,
+    "verified_be_darned": 1,
+    "verified_be_danged": 0,
+    "excl_ocr_ill_be_darned": 3
+  },
+  "D2b": {
+    "raw_tokens": 175,
+    "raw_types": 136,
+    "ocr_tokens_in_freq": 8,
+    "non_ocr_tokens_in_freq": 167,
+    "non_ocr_types_in_freq": 134,
+    "damned_non_ocr_tokens": 163,
+    "damned_non_ocr_types": 131,
+    "buggered_tokens": 4,
+    "buggered_types": 3,
+    "kwic_audited": 100,
+    "kwic_direct_bare_dismissals": 88,
+    "kwic_direct_bare_buggered": 3,
+    "kwic_distinct_shows_bare": 73,
+    "kwic_non_bare_breakdown": {
+      "excl_ocr_ill": 3,
+      "excl_ocr_shell": 1,
+      "excl_ocr_ll": 1,
+      "let_optative_theological": 2,
+      "excl_literal_let_passive": 1,
+      "let_dismissal": 2,
+      "subordinate_that_dismissal": 1,
+      "wordplay_pun": 1
+    }
+  },
+  "D3": {
+    "raw_tokens": 13,
+    "kwic_audited": 13,
+    "verified_subjectless_expressive_np": 0,
+    "exclusion_breakdown": {
+      "excl_slang_boo_boo_the_fool": 3,
+      "excl_transitive_verb_boo": 3,
+      "excl_imperative_verb_boo": 3,
+      "excl_chant_refrain_boo": 1,
+      "excl_proper_or_petname_boo": 1,
+      "excl_proper_name_boo_dbz": 1,
+      "excl_misspelled_yea_vocative": 1
+    }
+  },
+  "D4": {
+    "raw_tokens": 122,
+    "kwic_audited": 100,
+    "verified_imprecative": 75,
+    "excl_literal_verb": 25,
+    "verified_target_breakdown": {
+      "it": 59,
+      "you": 7,
+      "full_np": 8,
+      "acc_pron": 1
+    },
+    "distinct_shows_verified": 26,
+    "nero_wolfe_tokens": 43,
+    "top_shows": [
+      [
+        "A Nero Wolfe Mystery",
+        43
+      ],
+      [
+        "Doctor Who",
+        4
+      ],
+      [
+        "Sliders",
+        2
+      ],
+      [
+        "The Nine Tailors",
+        2
+      ],
+      [
+        "Perry Mason",
+        2
+      ],
+      [
+        "Alfred Hitchcock Pre...",
+        2
+      ],
+      [
+        "Justice League Action",
+        1
+      ],
+      [
+        "Sonic Boom",
+        1
+      ]
+    ],
+    "full_np_examples": [
+      [
+        "Blandings",
+        2013,
+        "UK/IE",
+        "put here by the lady. Cos I belong with the pigs. SHE SOBS Confound the \" loidy \"! CHATTERING Mrs Rossiter, please. Your father has deserted"
+      ],
+      [
+        "A Nero Wolfe Mystery",
+        2002,
+        "US/CA",
+        "? I don't care. Well, just, uh, start looking. Confound that woman. Mr. Wolfe? Yes. Is this it? Ideal,"
+      ],
+      [
+        "Mansfield Park",
+        1983,
+        "UK/IE",
+        ". I think I have it now - my two-and-forty speeches. But this! Confound the piece, it's all confused. \" I am the epitome of the"
+      ],
+      [
+        "Five Red Herrings",
+        1975,
+        "UK/IE",
+        "with any of our suspects. - There we are. - Thank you. Confound the fellow. MacPherson's in Ireland now, checking up on the story."
+      ],
+      [
+        "BBC Play of the Month",
+        1971,
+        "UK/IE",
+        "Come on, quickly. Very sorry. Sorry, took the wrong way. Confound that Graaberg. Give him something to take home with him, something nice."
+      ],
+      [
+        "The Onedin Line",
+        1971,
+        "UK/IE",
+        "should call the midwife. She won't come until it's time. - Confound that man! Has he no patience? Now, think on, my love"
+      ],
+      [
+        "Doctor Who",
+        1967,
+        "UK/IE",
+        "we were taking the Lieutenant, you see sir? The game, sir. Confound the game, this is the Prince's ring! Go with them. Take"
+      ],
+      [
+        "The Forsyte Saga",
+        1967,
+        "UK/IE",
+        "know about that? The whole family it's the talk of timothy's, confound the lot of them. But the odd thing, when I spoke to june"
+      ]
+    ]
+  }
+}
