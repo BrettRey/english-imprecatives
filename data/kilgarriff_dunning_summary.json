@@ -1,0 +1,585 @@
+{
+  "dunning_pp": {
+    "per_head_rates": {
+      "damn": {
+        "t2_t3_raw": 1695,
+        "to_hell_shared": 32,
+        "to_hell_per_1k": 18.88,
+        "for_ving_shared": 11,
+        "for_ving_per_1k": 6.49
+      },
+      "fuck": {
+        "t2_t3_raw": 10106,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 17,
+        "for_ving_per_1k": 1.68
+      },
+      "screw": {
+        "t2_t3_raw": 3148,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 13,
+        "for_ving_per_1k": 4.13
+      },
+      "bless": {
+        "t2_t3_raw": 3654,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 6,
+        "for_ving_per_1k": 1.64
+      },
+      "curse": {
+        "t2_t3_raw": 367,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 1,
+        "for_ving_per_1k": 2.72
+      },
+      "darn": {
+        "t2_t3_raw": 37,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 1,
+        "for_ving_per_1k": 27.03
+      },
+      "blast": {
+        "t2_t3_raw": 445,
+        "to_hell_shared": 1,
+        "to_hell_per_1k": 2.25,
+        "for_ving_shared": 0,
+        "for_ving_per_1k": 0.0
+      },
+      "sod": {
+        "t2_t3_raw": 53,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 0,
+        "for_ving_per_1k": 0.0
+      },
+      "bugger": {
+        "t2_t3_raw": 83,
+        "to_hell_shared": 0,
+        "to_hell_per_1k": 0.0,
+        "for_ving_shared": 0,
+        "for_ving_per_1k": 0.0
+      }
+    },
+    "damn_vs_fsb_2x2": {
+      "damn_t2_t3": 1695,
+      "fsb_t2_t3_raw": 16908,
+      "to_hell_g2_raw": 153.9,
+      "to_hell_g2_half_denom": 115.0,
+      "for_ving_g2_raw": 8.5
+    },
+    "zero_upper_bounds_95": {
+      "to_hell_fsb_raw_16908": {
+        "n": 16908,
+        "upper_95_pct": 0.0177
+      },
+      "to_hell_fsb_half_8454": {
+        "n": 8454,
+        "upper_95_pct": 0.0354
+      },
+      "tier1_primary6_148": {
+        "n": 148,
+        "upper_95_pct": 2.0
+      },
+      "tv_primary6_53": {
+        "n": 53,
+        "upper_95_pct": 5.5
+      },
+      "bnc2014_yay_boo_17": {
+        "n": 17,
+        "upper_95_pct": 16.2
+      },
+      "tv_d3_yay_boo_13": {
+        "n": 13,
+        "upper_95_pct": 20.6
+      },
+      "bnc2014_b2_2_euphemisms_11": {
+        "n": 11,
+        "upper_95_pct": 23.8
+      }
+    }
+  },
+  "kilgarriff_calibration": {
+    "corpus_size_ratio_tv_to_bnc14": 27.47,
+    "known_item_genre_calibration": {
+      "fuck it": {
+        "tv_raw": 1842,
+        "tv_pmw": 5.67,
+        "bnc14_raw": 138,
+        "bnc14_pmw": 11.66,
+        "bnc14_over_tv_raw_ratio": 2.06,
+        "kilgarriff_simple_maths_n1": 1.9
+      },
+      "fuck you": {
+        "tv_raw": 6869,
+        "tv_pmw": 21.14,
+        "bnc14_raw": 94,
+        "bnc14_pmw": 7.94,
+        "bnc14_over_tv_raw_ratio": 0.38,
+        "kilgarriff_simple_maths_n1": 0.4
+      },
+      "damn it": {
+        "tv_raw": 20107,
+        "tv_pmw": 61.87,
+        "bnc14_raw": 140,
+        "bnc14_pmw": 11.83,
+        "bnc14_over_tv_raw_ratio": 0.19,
+        "kilgarriff_simple_maths_n1": 0.2
+      },
+      "bless you": {
+        "tv_raw": 2431,
+        "tv_pmw": 7.48,
+        "bnc14_raw": 92,
+        "bnc14_pmw": 7.77,
+        "bnc14_over_tv_raw_ratio": 1.04,
+        "kilgarriff_simple_maths_n1": 1.03
+      },
+      "sod it": {
+        "tv_raw": 129,
+        "tv_pmw": 0.4,
+        "bnc14_raw": 16,
+        "bnc14_pmw": 1.35,
+        "bnc14_over_tv_raw_ratio": 3.41,
+        "kilgarriff_simple_maths_n1": 1.68
+      },
+      "screw it": {
+        "tv_raw": 1625,
+        "tv_pmw": 5.0,
+        "bnc14_raw": 21,
+        "bnc14_pmw": 1.77,
+        "bnc14_over_tv_raw_ratio": 0.35,
+        "kilgarriff_simple_maths_n1": 0.46
+      }
+    },
+    "rare_frame_rate_calibration": {
+      "to_hell": {
+        "tv_est_range": [
+          75,
+          94
+        ],
+        "tv_pmw_range": [
+          0.23,
+          0.29
+        ],
+        "bnc14_expected_at_tv_rate": [
+          2.7,
+          3.4
+        ],
+        "bnc14_observed": 1,
+        "bnc14_pmw": 0.08
+      },
+      "for_ving": {
+        "tv_est_range": [
+          53,
+          80
+        ],
+        "tv_pmw_range": [
+          0.16,
+          0.25
+        ],
+        "bnc14_expected_at_tv_rate": [
+          1.9,
+          2.9
+        ],
+        "bnc14_observed": 3,
+        "bnc14_pmw": 0.25
+      },
+      "fuck_euphemisms_f3": {
+        "tv_est_verified": 136,
+        "tv_pmw_est": 0.42,
+        "bnc14_expected_at_tv_rate": 5.0,
+        "bnc14_observed": 0,
+        "bnc14_pmw": 0.0
+      }
+    },
+    "bnc2014_concordance_dispersion": {
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123143454.csv": {
+        "query": "Query:[lc=\"blast|curse|drat|darn|dash|dang\"] [lc=\"it|you|him|her|them|me|us|this|that|thes",
+        "rows": 22,
+        "unique_conversations": 17
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123143616.csv": {
+        "query": "Query:[lc=\"damn|bless|fuck|sod|bugger|screw|blast|curse|hang|drat|darn|dash|dang\"] [lc=\"th",
+        "rows": 100,
+        "unique_conversations": 68
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123143710.csv": {
+        "query": "Query:[lc=\"frak|feck|fudge|eff|frig|frick\"] [lc=\"it|you|him|her|them|me|us|this|that|these",
+        "rows": 11,
+        "unique_conversations": 7
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123143854.csv": {
+        "query": "Query:[lc=\"god\"] [lc=\"damn|bless|curse|fuck|screw|sod|bugger|blast|darn|dang|drat|dash|rot",
+        "rows": 7,
+        "unique_conversations": 7
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123143928.csv": {
+        "query": "Query:[lc=\"damn|bless|fuck|sod|bugger|screw|blast|curse|darn|dang|drat|dash|eff|frak\"] [lc",
+        "rows": 1,
+        "unique_conversations": 1
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123143947.csv": {
+        "query": "Query:[lc=\"damn|bless|fuck|sod|bugger|screw|blast|curse|darn|dang|drat|dash|eff|frak\"] [lc",
+        "rows": 3,
+        "unique_conversations": 3
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123144011.csv": {
+        "query": "Query:[lc=\"confound|stuff\"] [lc=\"it|this|that|you|him|her|them|the\"]",
+        "rows": 50,
+        "unique_conversations": 22
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123144058.csv": {
+        "query": "Query:[lc=\"yay|boo\"] [lc=\"me|you|him|her|them|us|this|that|the|my|your\"]",
+        "rows": 17,
+        "unique_conversations": 16
+      },
+      "concordance_preloaded_bnc2014_spoken_tt3_20261123144249.csv": {
+        "query": "Query:[lc=\"confound\"] [lc=\"it|this|that|you|him|her|them|the\"]",
+        "rows": 1,
+        "unique_conversations": 1
+      }
+    }
+  },
+  "bnc_baby_bottom_up": {
+    "bnc_baby_tokens": 3918753,
+    "total_init_acc_tokens": 3425,
+    "top_40_by_g2": [
+      {
+        "word": "thank",
+        "count": 512,
+        "files": 54,
+        "total_word_freq": 767,
+        "pct_of_word": 66.8,
+        "g2": 6316.9
+      },
+      {
+        "word": "let",
+        "count": 321,
+        "files": 73,
+        "total_word_freq": 1356,
+        "pct_of_word": 23.7,
+        "g2": 3069.7
+      },
+      {
+        "word": "tell",
+        "count": 189,
+        "files": 49,
+        "total_word_freq": 1730,
+        "pct_of_word": 10.9,
+        "g2": 1481.7
+      },
+      {
+        "word": "give",
+        "count": 197,
+        "files": 50,
+        "total_word_freq": 2184,
+        "pct_of_word": 9.0,
+        "g2": 1466.0
+      },
+      {
+        "word": "oh",
+        "count": 264,
+        "files": 29,
+        "total_word_freq": 11136,
+        "pct_of_word": 2.4,
+        "g2": 1259.4
+      },
+      {
+        "word": "mind",
+        "count": 150,
+        "files": 31,
+        "total_word_freq": 1439,
+        "pct_of_word": 10.4,
+        "g2": 1159.4
+      },
+      {
+        "word": "no",
+        "count": 256,
+        "files": 27,
+        "total_word_freq": 15194,
+        "pct_of_word": 1.7,
+        "g2": 1051.2
+      },
+      {
+        "word": "excuse",
+        "count": 70,
+        "files": 26,
+        "total_word_freq": 172,
+        "pct_of_word": 40.7,
+        "g2": 755.1
+      },
+      {
+        "word": "see",
+        "count": 142,
+        "files": 35,
+        "total_word_freq": 5992,
+        "pct_of_word": 2.4,
+        "g2": 672.4
+      },
+      {
+        "word": "yeah",
+        "count": 117,
+        "files": 20,
+        "total_word_freq": 14368,
+        "pct_of_word": 0.8,
+        "g2": 317.4
+      },
+      {
+        "word": "yes",
+        "count": 78,
+        "files": 19,
+        "total_word_freq": 5453,
+        "pct_of_word": 1.4,
+        "g2": 292.2
+      },
+      {
+        "word": "leave",
+        "count": 40,
+        "files": 21,
+        "total_word_freq": 1074,
+        "pct_of_word": 3.7,
+        "g2": 223.9
+      },
+      {
+        "word": "bless",
+        "count": 20,
+        "files": 8,
+        "total_word_freq": 43,
+        "pct_of_word": 46.5,
+        "g2": 222.5
+      },
+      {
+        "word": "get",
+        "count": 67,
+        "files": 27,
+        "total_word_freq": 7209,
+        "pct_of_word": 0.9,
+        "g2": 197.0
+      },
+      {
+        "word": "show",
+        "count": 36,
+        "files": 16,
+        "total_word_freq": 1068,
+        "pct_of_word": 3.4,
+        "g2": 194.4
+      },
+      {
+        "word": "ask",
+        "count": 33,
+        "files": 24,
+        "total_word_freq": 843,
+        "pct_of_word": 3.9,
+        "g2": 188.0
+      },
+      {
+        "word": "put",
+        "count": 52,
+        "files": 20,
+        "total_word_freq": 3901,
+        "pct_of_word": 1.3,
+        "g2": 187.5
+      },
+      {
+        "word": "help",
+        "count": 37,
+        "files": 20,
+        "total_word_freq": 1307,
+        "pct_of_word": 2.8,
+        "g2": 187.0
+      },
+      {
+        "word": "take",
+        "count": 30,
+        "files": 16,
+        "total_word_freq": 3056,
+        "pct_of_word": 1.0,
+        "g2": 90.9
+      },
+      {
+        "word": "bring",
+        "count": 18,
+        "files": 13,
+        "total_word_freq": 642,
+        "pct_of_word": 2.8,
+        "g2": 90.5
+      },
+      {
+        "word": "ooh",
+        "count": 21,
+        "files": 7,
+        "total_word_freq": 1101,
+        "pct_of_word": 1.9,
+        "g2": 89.9
+      },
+      {
+        "word": "mummy",
+        "count": 19,
+        "files": 4,
+        "total_word_freq": 817,
+        "pct_of_word": 2.3,
+        "g2": 88.6
+      },
+      {
+        "word": "send",
+        "count": 14,
+        "files": 13,
+        "total_word_freq": 271,
+        "pct_of_word": 5.2,
+        "g2": 87.5
+      },
+      {
+        "word": "pick",
+        "count": 15,
+        "files": 12,
+        "total_word_freq": 373,
+        "pct_of_word": 4.0,
+        "g2": 86.2
+      },
+      {
+        "word": "watch",
+        "count": 17,
+        "files": 6,
+        "total_word_freq": 595,
+        "pct_of_word": 2.9,
+        "g2": 86.1
+      },
+      {
+        "word": "bet",
+        "count": 13,
+        "files": 8,
+        "total_word_freq": 262,
+        "pct_of_word": 5.0,
+        "g2": 80.2
+      },
+      {
+        "word": "remind",
+        "count": 9,
+        "files": 8,
+        "total_word_freq": 51,
+        "pct_of_word": 17.6,
+        "g2": 79.3
+      },
+      {
+        "word": "goodness",
+        "count": 9,
+        "files": 4,
+        "total_word_freq": 88,
+        "pct_of_word": 10.2,
+        "g2": 68.8
+      },
+      {
+        "word": "gim",
+        "count": 5,
+        "files": 2,
+        "total_word_freq": 6,
+        "pct_of_word": 83.3,
+        "g2": 65.0
+      },
+      {
+        "word": "keep",
+        "count": 16,
+        "files": 12,
+        "total_word_freq": 1245,
+        "pct_of_word": 1.3,
+        "g2": 56.4
+      },
+      {
+        "word": "forgive",
+        "count": 6,
+        "files": 4,
+        "total_word_freq": 27,
+        "pct_of_word": 22.2,
+        "g2": 56.0
+      },
+      {
+        "word": "pass",
+        "count": 10,
+        "files": 5,
+        "total_word_freq": 276,
+        "pct_of_word": 3.6,
+        "g2": 55.4
+      },
+      {
+        "word": "follow",
+        "count": 10,
+        "files": 8,
+        "total_word_freq": 298,
+        "pct_of_word": 3.4,
+        "g2": 53.8
+      },
+      {
+        "word": "damn",
+        "count": 8,
+        "files": 4,
+        "total_word_freq": 146,
+        "pct_of_word": 5.5,
+        "g2": 50.9
+      },
+      {
+        "word": "pardon",
+        "count": 9,
+        "files": 7,
+        "total_word_freq": 264,
+        "pct_of_word": 3.4,
+        "g2": 48.7
+      },
+      {
+        "word": "bugger",
+        "count": 6,
+        "files": 4,
+        "total_word_freq": 64,
+        "pct_of_word": 9.4,
+        "g2": 44.8
+      },
+      {
+        "word": "noli",
+        "count": 4,
+        "files": 1,
+        "total_word_freq": 9,
+        "pct_of_word": 44.4,
+        "g2": 44.0
+      },
+      {
+        "word": "save",
+        "count": 8,
+        "files": 6,
+        "total_word_freq": 250,
+        "pct_of_word": 3.2,
+        "g2": 42.3
+      },
+      {
+        "word": "teach",
+        "count": 6,
+        "files": 3,
+        "total_word_freq": 79,
+        "pct_of_word": 7.6,
+        "g2": 42.2
+      },
+      {
+        "word": "fuck",
+        "count": 6,
+        "files": 4,
+        "total_word_freq": 91,
+        "pct_of_word": 6.6,
+        "g2": 40.4
+      }
+    ],
+    "extra_probe_raw_counts": {
+      "blow": 12,
+      "bollocks": 1,
+      "bother": 1,
+      "burn": 4,
+      "hang": 8,
+      "piss": 1,
+      "shit": 2,
+      "stone": 2,
+      "strike": 2,
+      "stuff": 8
+    }
+  }
+}
