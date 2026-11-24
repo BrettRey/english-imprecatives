@@ -22,7 +22,7 @@ Spoken BNC2014 (Sketch Engine \texttt{preloaded/bnc2014\_spoken\_tt3}, 11.83M to
 \renewcommand{\arraystretch}{0.92}
 \setlength{\tabcolsep}{3.5pt}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.8cm}>{\raggedright\arraybackslash}p{1.1cm}>{\raggedright\arraybackslash}p{7.0cm}>{\raggedright\arraybackslash}p{3.2cm}@{}}
-\caption{Tier-2 Mark Davies query strings (T1a--T8c (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D8c on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
+\caption{Tier-2 Mark Davies query strings (T1a--T8c (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D9 on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
 \label{tab:appendix-queries} \\
 \toprule
 ID & Corpus & Query string & Audit scope \\
@@ -81,6 +81,7 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{D8a} & TV & \texttt{damned be \_n*} & Full corpus (0 hits) \\
 \texttt{D8b} & TV & \texttt{damned be the \_n*} & Full corpus (0 hits) \\
 \texttt{D8c} & TV & \texttt{damned be him\qsep{}he\qsep{}you\qsep{}they\qsep{}them\qsep{}his\qsep{}your\qsep{}their\qsep{}thou\qsep{}thy\qsep{}my\qsep{}her\qsep{}it\qsep{}this\qsep{}that} & Full freq (4) + all 4 KWIC \\
+\texttt{D9} & TV & \texttt{* fuck *self} (word before + \mention{fuck} + reflexive) & Freq table (680), by preceding word; \enquote{clause-initial} = a punctuation token precedes. All 56 \mention{fuck myself} lines inspected (KWIC); third-person and \mention{yourself} lines not inspected \\
 \midrule
 \texttt{G1}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & Top 100 (20 varieties) \\
 \texttt{G2}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Full freq (20 varieties) \\
@@ -103,7 +104,7 @@ ID & Corpus & Query string & Audit scope \\
 \clearpage
 \section*{Overt \mention{God} within \mention{bless}}
 
-This table supports the contrast reported in §5.2 of the article (80/86 vs.\ 12/272).
+This table supports the contrast reported in the article's section on overt \mention{God} (80/86 vs.\ 12/272).
 
 \begin{table}[ht]
 \centering
