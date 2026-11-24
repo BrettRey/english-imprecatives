@@ -2,11 +2,11 @@
 slug: english-imprecatives
 kind: paper
 title: 'The Grammar of English Subjectless Imprecatives and Benedictives: Lexical Asymmetries, Evaluative Modification, and Euphemistic Inheritance'
-stage: draft_calibration_edit_unreviewed
+stage: reframed_draft_pre_submission_checks
 external: https://github.com/BrettRey/english-imprecatives
 blocked_on: [brett-review]
-updated: 2026-11-23
-next_action: 'Brett reviews the 2026-11-23 table cuts, data corrections and calibration edit (17 pp., about 7,740 words; supplement 3 pp.; see DECISIONS.md); then rebuild submission/ell-2026-11-23/ and commit.'
+updated: 2026-11-24
+next_action: 'Submission candidate is english-imprecatives-reframed.tex (english-imprecatives.tex retained; passes.py pinned to the reframed file). Submission checks 2026-11-24: quotation, terminology (after acronym fixes), build, blinding pass; cold read FAIL on the first run, PASS after the abstract and opening revision (question first, results led by where generalizing from damn/fuck fails, abstract ends on what the results rule out; rerun 2/3 advance, no MISSING, convergent problem statements); 20 registered passes outstanding. Next: work through the passes, then package and portal-fields record.'
 ---
 
 # STATUS.md: English Subjectless Imprecatives and Benedictives

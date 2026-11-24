@@ -78,3 +78,17 @@ Pronoun-base shares for Section 5.3 (T2 + T3 with *him/her/them*; `analysis/tv_f
 ## D9: `* fuck *self` (TV Corpus, frequency by preceding word; Brett, 2026-11-24)
 
 680 strings. *go fuck yourself* 440, *go fuck himself* 64, *go fuck myself* 42, *go fuck herself* 19, *go fuck itself* 6. Clause-initial *fuck yourself* after punctuation about 45 (`.` 14, `?` 13, `-` 5, `,` 5, `!` 4, `''` 3, `...` 1). Clause-initial *fuck himself/herself/itself*: 0; *fuck myself* after punctuation: 1. KWIC for all 56 *fuck myself* lines (Brett, 2026-11-24): every line has a subject or controller for the reflexive (*told me to go fuck myself*, *should I just go fuck myself?*, *I'd fuck myself*) or echoes the previous turn (*Go fuck myself?* ×3); the `?` token is *Peep Show* "what shall I do after I've pissed myself? Fuck myself? Eat myself?", an elliptical question with the speaker as understood subject. No self-curse. Third-person reflexives otherwise after *go*, *to*, *can* (5), *and*, *person*. Frequency table only; no KWIC audit.
+
+## D10: verb + `you from` (TV Corpus, Brett, 2026-11-24)
+
+Frequency table by preceding verb: 1,049 strings over 147 verbs (*know* 137, *recognize* 81, *keep* 79, *remember* 75, *thank* 72 …). Sampled heads: *fuck you from* 1, *hang you from* 4; *bless*, *damn*, *curse*, *screw*, *sod*, *bugger* and the minced forms absent (POS-tagged query, so *damn* may be under-counted; the word-form query D11 confirms the zero for the sincerity phrase).
+
+KWIC audit (71 of 72 *thank you from* lines shown; first-pass codes by Claude Opus 5.5, pending Brett's check): sender phrase naming the thankers 21 (*thank you from me*, *from all of us*); sincerity phrase *from the bottom of my/our heart(s)* 31 (15 bare *Thank you from…*, 16 with overt *I*/*we thank you from…*; 9 of the 31 are jocular variants, e.g. *of my withers*); *thank you* as a noun 18 (*a thank you from the mayor*); other 1. *Fuck you from? The Emerald Forest?* (*Survivor's Remorse*): jocular echo of the sender phrase. *Hang you from* 4/4 literal suspension.
+
+## D11: `damn|bless|fuck|screw|curse|thank you|him|her|them from the bottom of my|our heart` (TV Corpus, word forms; Brett, 2026-11-24)
+
+24 strings, all *thank*: *thank you from the bottom of my heart* 21, *… of our heart* 2, *thank them from the bottom of my heart* 1. KWIC (all 24): bare *Thank you from the bottom of my heart* 8 (7 utterances; the *RuPaul's Drag Race* caption repeats); overt subject or controller 16 (*I thank you*, *We thank you*, *I want to thank you*, *I wanna thank them*). 0 for *damn*, *bless*, *fuck*, *screw*, *curse*. Query string recorded as proposed in session; Brett to correct if run differently.
+
+## D12: `damn|bless|curse|blast|screw|sod|bugger|darn|dang|drat you from` (TV Corpus, word forms; Brett, 2026-11-24)
+
+2 strings, both ordinary verbs: *I'll curse you from hell* (*The Bastard Executioner*, finite with subject), *screw you from behind* (*Shameless*, literal). 0 for *damn*, *bless* and the rest, so D10's absences aren't a tagging artifact.
