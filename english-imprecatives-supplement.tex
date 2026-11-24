@@ -18,7 +18,7 @@ Spoken BNC2014 (Sketch Engine \texttt{preloaded/bnc2014\_spoken\_tt3}, 11.83M to
 
 \begin{table}[tbp]
 \centering
-\caption{Tier-2 Mark Davies query strings (T1a--T8b, F1a--F5c, C1a--C3b, D1--D4 on the TV Corpus; G1--G4, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
+\caption{Tier-2 Mark Davies query strings (T1a--T8b (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D8b on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
 \label{tab:appendix-queries}
 \scriptsize
 \renewcommand{\arraystretch}{0.88}
@@ -36,16 +36,18 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{T6}  & TV & \texttt{god H13 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}us\qsep{}the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her} & Full freq + 100 KWIC \\
 \texttt{T7a} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full freq + all 85 KWIC \\
 \texttt{T7b} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq + all 72 KWIC \\
+\texttt{T7c} & TV & \texttt{hang you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full corpus (0 hits) \\
+\texttt{T7d} & TV & \texttt{hang you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq (10 / 9 types) + all 10 KWIC \\
 \texttt{T8a} & TV & \texttt{H7 and H7 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq + all 7 KWIC \\
 \texttt{T8b} & TV & \texttt{ouch\qsep{}oops\qsep{}ugh\qsep{}wow\qsep{}whoops\qsep{}yuck him\qsep{}her\qsep{}them} & Full freq + all 53 KWIC \\
 \midrule
 \texttt{F1a} & TV & \texttt{silly\qsep{}lucky\qsep{}poor\qsep{}yay\qsep{}boo you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + all 2 KWIC \\
 \texttt{F1b} & TV & \texttt{shame\qsep{}good\qsep{}kudos on\qsep{}for\qsep{}to you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + 100 KWIC \\
 \texttt{F2}  & TV & \texttt{damn\qsep{}fuck\qsep{}screw\qsep{}sod\qsep{}bugger\qsep{}bless\qsep{}curse\qsep{}darn\qsep{}dang the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n* for \_v?g*} & Full freq + all 13 KWIC \\
-\texttt{F3}  & TV & \texttt{frig\qsep{}frick\qsep{}feck\qsep{}fudge\qsep{}frak\qsep{}eff it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}the\qsep{}this\qsep{}that} & Full freq + 100 KWIC \\
+\texttt{F3}  & TV & \texttt{frig\qsep{}frick\qsep{}feck\qsep{}fudge\qsep{}frak\qsep{}eff it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}the\qsep{}this\qsep{}that} & Full freq (223) + 100-line sample (Chart) \\
 \texttt{F4a} & TV & \texttt{god bless the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Full freq + 100 KWIC \\
 \texttt{F4b} & TV & \texttt{gosh\qsep{}gol\qsep{}gold\qsep{}dog\qsep{}god darn\qsep{}dang\qsep{}rot\qsep{}drat it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me} & Full freq + 100 KWIC \\
-\texttt{F5a} & TV & \texttt{be darned\qsep{}danged\qsep{}dratted\qsep{}buggered\qsep{}damned} & Full freq + 100 KWIC \\
+\texttt{F5a} & TV & \texttt{be darned\qsep{}danged\qsep{}dratted\qsep{}buggered\qsep{}damned} & Full freq + 100 KWIC; \texttt{be darned}: 100-line sample (Chart) \\
 \texttt{F5b} & TV & \texttt{he\qsep{}she\qsep{}they\qsep{}i\qsep{}will\qsep{}would\qsep{}could\qsep{}to damn\qsep{}damns\qsep{}damned\qsep{}curse\qsep{}curses\qsep{}cursed\qsep{}darn\qsep{}darns\qsep{}darned\qsep{}dang\qsep{}dangs\qsep{}danged\qsep{}drat\qsep{}drats\qsep{}dratted him\qsep{}her\qsep{}them} & Full freq + all 49 KWIC \\
 \texttt{F5c} & TV & \texttt{dash it} & All 65 KWIC \\
 \midrule
@@ -59,14 +61,29 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{D2a} & TV & \texttt{\_n* be darned\qsep{}danged} & Full freq + all 4 KWIC \\
 \texttt{D2b} & TV & \texttt{\_n* be damned\qsep{}buggered} & Full freq (175) + 100 KWIC \\
 \texttt{D3}  & TV & \texttt{yay\qsep{}boo the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Full freq + all 13 KWIC \\
-\texttt{D4}  & TV & \texttt{confound it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}the\qsep{}this\qsep{}that} & Full freq (122) + 100 KWIC \\
+\texttt{D4}  & TV & \texttt{confound it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}the\qsep{}this\qsep{}that} & Full freq (122) + 100-line sample (Chart) \\
+\texttt{D5}  & TV & \texttt{\_n* be fucked\qsep{}screwed} & Full freq (2) + all 2 KWIC \\
+\texttt{D6}  & TV & \texttt{\_n* be blessed} & Full freq (20) + 18 KWIC \\
+\texttt{D7a} & TV & \texttt{blessed be \_n*} & Full freq (9) + all 9 KWIC \\
+\texttt{D7b} & TV & \texttt{blessed be the \_n*} & Full freq (77) + 75 KWIC \\
+\texttt{D8a} & TV & \texttt{damned be \_n*} & Full corpus (0 hits) \\
+\texttt{D8b} & TV & \texttt{damned be the \_n*} & Full corpus (0 hits) \\
 \midrule
 \texttt{G1}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & Top 100 (20 varieties) \\
 \texttt{G2}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Full freq (20 varieties) \\
-\texttt{G3a} & GloWbE & \texttt{that damn\qsep{}darn\qsep{}dang\qsep{}dratted\qsep{}darned\qsep{}dashed\qsep{}danged \_n*} & Top 100 (20 varieties) \\
-\texttt{G3b} & GloWbE & \texttt{damn\qsep{}darn\qsep{}dang\qsep{}darned\qsep{}dratted\qsep{}danged \_j*} & Top 100 (20 varieties) \\
+\texttt{G1a} & GloWbE & \texttt{darn the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & All 51 lines (Chart sample) \\
+\texttt{G1b} & GloWbE & \texttt{dang the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & All 20 lines (Chart sample) \\
+\texttt{G2a} & GloWbE & \texttt{darn\qsep{}dang\qsep{}drat him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & All 26 lines (Chart sample) \\
+\texttt{G1c} & GloWbE & \texttt{dash the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & 100-line sample (Chart) \\
+\texttt{G2b} & GloWbE & \texttt{dash him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & All 87 lines (Chart) \\
+\texttt{G3a} & GloWbE & \texttt{that damn\qsep{}darn\qsep{}dang\qsep{}dratted\qsep{}darned\qsep{}dashed\qsep{}danged \_n*} & Totals per head (Chart) + 100-line samples \\
+\texttt{G3b} & GloWbE & \texttt{damn\qsep{}darn\qsep{}dang\qsep{}darned\qsep{}dratted\qsep{}danged \_j*} & Totals per head (Chart) + 100-line samples \\
 \texttt{G4}  & GloWbE & \texttt{i\qsep{}you\qsep{}he\qsep{}she\qsep{}they\qsep{}we dratted\qsep{}danged\qsep{}darned it\qsep{}him\qsep{}her\qsep{}them\qsep{}the\qsep{}this\qsep{}that} & Full corpus (0 hits) \\
-\texttt{C4}  & GloWbE & \texttt{i\qsep{}you\qsep{}he\qsep{}she\qsep{}they\qsep{}we damned\qsep{}cursed it\qsep{}him\qsep{}her\qsep{}them\qsep{}the\qsep{}this\qsep{}that} & Full freq (297 hits) \\
+\texttt{C4}  & GloWbE & \texttt{i\qsep{}you\qsep{}he\qsep{}she\qsep{}they\qsep{}we damned\qsep{}cursed it\qsep{}him\qsep{}her\qsep{}them\qsep{}the\qsep{}this\qsep{}that} & Full freq (297) + 100-line sample \\
+\texttt{G5}  & GloWbE & \texttt{damn the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & Full freq (880 / 530 types) + 100-line sample \\
+\texttt{G6}  & GloWbE & \texttt{damn him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Full freq (368) + 100-line sample \\
+\texttt{G7}  & GloWbE & \texttt{drat \_j*} & Full corpus (0 hits) \\
+\texttt{G8}  & GloWbE & \texttt{that drat \_n*} & Full corpus (0 hits) \\
 \bottomrule
 \end{tabular}
 \end{table}

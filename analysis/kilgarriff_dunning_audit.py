@@ -187,13 +187,19 @@ def run_kilgarriff_calibration():
             "bnc14_observed": 3,
             "bnc14_pmw": round(3 / bnc_m, 2),
         },
-        # F3: 61 verified among 100 nonrandom displayed KWICs; 123 undisplayed.
-        # Deterministic bounds (61 to 61 + 123), not a projection of the
-        # display rate onto the raw total (2026-11-23).
+        # F3: 68 verified imprecatives in a 100-line Chart-view sample of the
+        # 223 hits (2026-11-23), replacing the earlier bounds from the first
+        # 100 displayed lines (61 verified).
         "fuck_euphemisms_f3": {
-            "tv_est_range": [61, 61 + (223 - 100)],
-            "tv_pmw_range": [round(61 / tv_m, 2), round((61 + 223 - 100) / tv_m, 2)],
-            "bnc14_expected_at_tv_rate": [round(61 / ratio_size, 1), round((61 + 223 - 100) / ratio_size, 1)],
+            "tv_sample_share": 0.68,
+            "tv_est_verified": round(223 * 0.68),
+            "tv_pmw_est": round(223 * 0.68 / tv_m, 2),
+            "bnc14_expected_at_tv_rate": round(223 * 0.68 / ratio_size, 1),
+            # 39 of the 68 sampled tokens are frak from one franchise
+            # (Battlestar Galactica, Caprica); scaling assumes even dispersion
+            # (Kilgarriff 2005), so also report the share without it.
+            "tv_sample_share_excl_frak_franchise": 0.29,
+            "bnc14_expected_excl_frak_franchise": round(223 * 0.29 / ratio_size, 1),
             "bnc14_observed": 0,
             "bnc14_pmw": 0.0,
         },

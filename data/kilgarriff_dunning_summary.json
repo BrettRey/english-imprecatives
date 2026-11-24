@@ -198,18 +198,12 @@
         "bnc14_pmw": 0.25
       },
       "fuck_euphemisms_f3": {
-        "tv_est_range": [
-          61,
-          184
-        ],
-        "tv_pmw_range": [
-          0.19,
-          0.57
-        ],
-        "bnc14_expected_at_tv_rate": [
-          2.2,
-          6.7
-        ],
+        "tv_sample_share": 0.68,
+        "tv_est_verified": 152,
+        "tv_pmw_est": 0.47,
+        "bnc14_expected_at_tv_rate": 5.5,
+        "tv_sample_share_excl_frak_franchise": 0.29,
+        "bnc14_expected_excl_frak_franchise": 2.4,
         "bnc14_observed": 0,
         "bnc14_pmw": 0.0
       }
