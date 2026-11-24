@@ -1,7 +1,7 @@
 # Round 4 query tallies (2026-11-23)
 <!-- SUMMARY: Counts and audit categories for the TV and GloWbE queries run on 2026-11-23 (D5–D8b, T7c–T7d, G1a–G8, C4 sample); no corpus text · status: complete · updated: 2026-11-23 -->
 
-Queries run by hand by the author on English-Corpora.org; audits by line, coded by Claude Opus 5.5 and checked against the paper. Query IDs match Supplementary Table S1. Line-level coding with short corpus cues is kept out of the public repository (corpus terms of use). Examples cited here are those already printed in the paper.
+Queries run by hand by the author on English-Corpora.org. First-pass line codes by Claude Opus 5.5; every code checked by the author. Query IDs match Supplementary Table S1. Line-level coding with short corpus cues is kept out of the public repository (corpus terms of use). Examples cited here are those already printed in the paper.
 
 ## TV Corpus
 
@@ -54,3 +54,23 @@ These replace audits that used the first lines displayed.
 | F5a (*be darned*) | `be darned` | 103 | 99 formulaic (*I'll be darned!*, *be darned if…*); 1 dismissal (*Rules be darned, Richard.*) |
 
 Rate calibration (Kilgarriff 2005 on dispersion): at the sampled share (68%) the TV rate is 0.47 pmw, about 5 expected in Spoken BNC2014; without the *frak* franchise (29%), about 2.
+
+## Recomputed from the TV frequency tables (2026-11-23)
+
+- T6 (*God* + HEAD + NP, 4,084): *damn* 2,229, *bless* 1,802, *dang* 28, *darn* 11, *curse* 9, *blast* 3, *fuck* 2. Without *it*-targets and routine *God bless you*: *bless* 686, *damn* 140, *curse* 8, *fuck* 1, all other heads 0.
+- D8c (`damned be him|he|you|…|that`): 4 hits, all quotations or echoes of *Macbeth* V.viii (*damned be him that first cries "Hold, enough!"* 3; *damned be he who first cries* 1).
+- T8c (coordination over the ten heads incl. *bless*, *darn*, *dang*): 11 hits, identical to T8a (*damn and blast it* 8, *blast and damn it* 2, *damn and blast you* 1); all 11 lines British period drama or comedy.
+
+## TV frame samples behind Table 3 (Chart view, 100 lines each)
+
+These replace the earlier indicator (a verb or auxiliary immediately before the head, in the first 100 lines displayed: 6, 10, 37, 23, 44), which no tracked file documented. First-pass codes by Claude Opus 5.5; every code checked by the author. Lines and codes: `data/davies/tv-frame-samples-2026-11-23-raw.txt` (gitignored); tallies: `analysis/tv_frame_samples.py` → `analysis/tv_frame_samples.json`.
+
+| Frame | Imprecatives | Ordinary verbs | Overt *God* | Other |
+|---|---|---|---|---|
+| T1a HEAD + *it* | 78 | 12 (*screw* 5, *hang* 4, *fuck* 2, *blast* 1) | 9 | 1 |
+| T2 HEAD + *you* | 62 | 14 | 10 | 13 (12 *what the fuck you…*); 1 ambiguous |
+| T3 HEAD + *him/her/them/me/us* | 45 | 39 (*fuck* 17, *hang* 12, *screw* 5, *bless* 5) | 15 | 1 |
+| T4 HEAD + *the/this/that/these/those* N | 47 | 46 (*hang* 10, *blast* 10, *bless* 9, *screw* 8, *fuck* 7, *curse* 2) | 5 | 2 |
+| T5 HEAD + *my/your/his/her/their* N | 35 | 58 (*fuck* 20, *hang* 20, *screw* 10, others 8) | 3 | 4 |
+
+Pronoun-base shares for Section 5.3 (T2 + T3 with *him/her/them*; `analysis/tv_frame_samples.py`; shares estimated per head within each frame and weighted by that frame's raw base): construction share *fuck* 0.65 (72 lines), *screw* 0.80 (21), *bless* 0.34 (36), *damn* 0.84 (14); *fuck* + *screw* + *bless* pooled 0.61, so about 8,500 of 13,908 strings. Dunning *G*² for *to hell*, *damn* against the three: 145 on raw strings, 127 on the scaled bases (95% upper bound on the zero 0.035%). This replaces the earlier hypothetical halving (107).

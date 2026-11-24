@@ -79,7 +79,11 @@
       "fsb_t2_t3_shared_raw": 13908,
       "to_hell_g2_raw": 145.0,
       "to_hell_g2_half_denom": 106.9,
-      "for_ving_g2_raw": 6.5
+      "for_ving_g2_raw": 6.5,
+      "damn_est_construction_base": 1372,
+      "fsb_est_construction_base": 8491,
+      "to_hell_g2_scaled_by_sampled_shares": 126.9,
+      "to_hell_fsb_scaled_upper_95_pct": 0.0353
     },
     "zero_upper_bounds_95": {
       "to_hell_fsb_shared": {

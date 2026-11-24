@@ -1,0 +1,164 @@
+{
+ "frames": {
+  "T1a": {
+   "codes": {
+    "G": 9,
+    "I": 78,
+    "O": 12,
+    "X": 1
+   },
+   "ordinary_verb_heads": {
+    "screw": 5,
+    "hang": 4,
+    "fuck": 2,
+    "blast": 1
+   }
+  },
+  "T2": {
+   "codes": {
+    "I": 62,
+    "O": 14,
+    "A": 1,
+    "X": 13,
+    "G": 10
+   },
+   "ordinary_verb_heads": {
+    "fuck": 3,
+    "hang": 3,
+    "curse": 2,
+    "screw": 2,
+    "bless": 2,
+    "blast": 1,
+    "damn": 1
+   }
+  },
+  "T3": {
+   "codes": {
+    "I": 45,
+    "O": 39,
+    "G": 15,
+    "X": 1
+   },
+   "ordinary_verb_heads": {
+    "fuck": 17,
+    "hang": 12,
+    "screw": 5,
+    "bless": 5
+   }
+  },
+  "T4": {
+   "codes": {
+    "I": 47,
+    "O": 46,
+    "G": 5,
+    "X": 2
+   },
+   "ordinary_verb_heads": {
+    "hang": 10,
+    "blast": 10,
+    "bless": 9,
+    "screw": 8,
+    "fuck": 7,
+    "curse": 2
+   }
+  },
+  "T5": {
+   "codes": {
+    "O": 58,
+    "I": 35,
+    "X": 4,
+    "G": 3
+   },
+   "ordinary_verb_heads": {
+    "fuck": 20,
+    "hang": 20,
+    "screw": 10,
+    "bless": 2,
+    "blast": 2,
+    "curse": 2,
+    "damn": 1,
+    "bugger": 1
+   }
+  }
+ },
+ "pronoun_base_shares": {
+  "fuck": {
+   "raw_base": 8202,
+   "by_frame": {
+    "T2": {
+     "sample_lines": 51,
+     "construction_share": 0.69,
+     "raw_base": 6869
+    },
+    "T3": {
+     "sample_lines": 21,
+     "construction_share": 0.48,
+     "raw_base": 1333
+    }
+   },
+   "sample_lines": 72,
+   "est_construction_base": 5349,
+   "construction_share": 0.65
+  },
+  "screw": {
+   "raw_base": 2593,
+   "by_frame": {
+    "T2": {
+     "sample_lines": 10,
+     "construction_share": 0.8,
+     "raw_base": 1936
+    },
+    "T3": {
+     "sample_lines": 11,
+     "construction_share": 0.82,
+     "raw_base": 657
+    }
+   },
+   "sample_lines": 21,
+   "est_construction_base": 2086,
+   "construction_share": 0.8
+  },
+  "bless": {
+   "raw_base": 3113,
+   "by_frame": {
+    "T2": {
+     "sample_lines": 19,
+     "construction_share": 0.37,
+     "raw_base": 2431
+    },
+    "T3": {
+     "sample_lines": 17,
+     "construction_share": 0.24,
+     "raw_base": 682
+    }
+   },
+   "sample_lines": 36,
+   "est_construction_base": 1056,
+   "construction_share": 0.34
+  },
+  "damn": {
+   "raw_base": 1627,
+   "by_frame": {
+    "T2": {
+     "sample_lines": 11,
+     "construction_share": 0.82,
+     "raw_base": 1400
+    },
+    "T3": {
+     "sample_lines": 3,
+     "construction_share": 1.0,
+     "raw_base": 227
+    }
+   },
+   "sample_lines": 14,
+   "est_construction_base": 1372,
+   "construction_share": 0.84
+  },
+  "fsb_pooled": {
+   "raw_base": 13908,
+   "sample_lines": 129,
+   "est_construction_base": 8491,
+   "construction_share": 0.611
+  }
+ }
+}

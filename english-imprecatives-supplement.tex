@@ -18,7 +18,7 @@ Spoken BNC2014 (Sketch Engine \texttt{preloaded/bnc2014\_spoken\_tt3}, 11.83M to
 
 \begin{table}[tbp]
 \centering
-\caption{Tier-2 Mark Davies query strings (T1a--T8b (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D8b on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
+\caption{Tier-2 Mark Davies query strings (T1a--T8b (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D8c on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
 \label{tab:appendix-queries}
 \scriptsize
 \renewcommand{\arraystretch}{0.88}
@@ -27,18 +27,19 @@ Spoken BNC2014 (Sketch Engine \texttt{preloaded/bnc2014\_spoken\_tt3}, 11.83M to
 \toprule
 ID & Corpus & Query string & Audit scope \\
 \midrule
-\texttt{T1a} & TV & \texttt{H13 it} & Freq + 100 KWIC \\
+\texttt{T1a} & TV & \texttt{H13 it} & Freq + 100 KWIC; 100-line sample (Chart) \\
 \texttt{T1b} & TV & \texttt{dammit\qsep{}goddammit} & Freq table \\
-\texttt{T2}  & TV & \texttt{H13 you} & Freq + 98 KWIC \\
-\texttt{T3}  & TV & \texttt{H13 him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Freq + 100 KWIC \\
-\texttt{T4}  & TV & \texttt{H13 the\qsep{}this\qsep{}that\qsep{}these\qsep{}those \_n*} & Top 100 + 100 KWIC \\
-\texttt{T5}  & TV & \texttt{H13 my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Top 100 + 100 KWIC \\
+\texttt{T2}  & TV & \texttt{H13 you} & Freq + 98 KWIC; 100-line sample (Chart) \\
+\texttt{T3}  & TV & \texttt{H13 him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Freq + 100 KWIC; 100-line sample (Chart) \\
+\texttt{T4}  & TV & \texttt{H13 the\qsep{}this\qsep{}that\qsep{}these\qsep{}those \_n*} & Top 100 + 100 KWIC; 100-line sample (Chart) \\
+\texttt{T5}  & TV & \texttt{H13 my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Top 100 + 100 KWIC; 100-line sample (Chart) \\
 \texttt{T6}  & TV & \texttt{god H13 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}us\qsep{}the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her} & Full freq + 100 KWIC \\
 \texttt{T7a} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full freq + all 85 KWIC \\
 \texttt{T7b} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq + all 72 KWIC \\
 \texttt{T7c} & TV & \texttt{hang you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full corpus (0 hits) \\
 \texttt{T7d} & TV & \texttt{hang you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq (10 / 9 types) + all 10 KWIC \\
 \texttt{T8a} & TV & \texttt{H7 and H7 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq + all 7 KWIC \\
+\texttt{T8c} & TV & \texttt{H7\qsep{}bless\qsep{}darn\qsep{}dang and H7\qsep{}bless\qsep{}darn\qsep{}dang it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq (11) + all 11 KWIC \\
 \texttt{T8b} & TV & \texttt{ouch\qsep{}oops\qsep{}ugh\qsep{}wow\qsep{}whoops\qsep{}yuck him\qsep{}her\qsep{}them} & Full freq + all 53 KWIC \\
 \midrule
 \texttt{F1a} & TV & \texttt{silly\qsep{}lucky\qsep{}poor\qsep{}yay\qsep{}boo you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + all 2 KWIC \\
@@ -68,6 +69,7 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{D7b} & TV & \texttt{blessed be the \_n*} & Full freq (77) + 75 KWIC \\
 \texttt{D8a} & TV & \texttt{damned be \_n*} & Full corpus (0 hits) \\
 \texttt{D8b} & TV & \texttt{damned be the \_n*} & Full corpus (0 hits) \\
+\texttt{D8c} & TV & \texttt{damned be him\qsep{}he\qsep{}you\qsep{}they\qsep{}them\qsep{}his\qsep{}your\qsep{}their\qsep{}thou\qsep{}thy\qsep{}my\qsep{}her\qsep{}it\qsep{}this\qsep{}that} & Full freq (4) + all 4 KWIC \\
 \midrule
 \texttt{G1}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & Top 100 (20 varieties) \\
 \texttt{G2}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Full freq (20 varieties) \\

@@ -116,6 +116,12 @@ def run_dunning_pp_analysis():
     fsb_n_half = fsb_n // 2
     g2_to_hell_half = dunning_g2(32, damn_n - 32, 0, fsb_n_half)
     g2_for_ving_raw = dunning_g2(11, damn_n - 11, fsb_for, fsb_n - fsb_for)
+    # Measured sensitivity: scale each base by its sampled construction share
+    # (analysis/tv_frame_samples.py, Chart-view samples of T2 and T3).
+    shares = json.loads((Path(__file__).resolve().parent / "tv_frame_samples.json").read_text())["pronoun_base_shares"]
+    damn_est = shares["damn"]["est_construction_base"]
+    fsb_est = shares["fsb_pooled"]["est_construction_base"]
+    g2_to_hell_scaled = dunning_g2(32, damn_est - 32, 0, fsb_est)
 
     zeros = {
         "to_hell_fsb_shared": {"n": fsb_n, "upper_95_pct": round(100 * binom_zero_upper_95(fsb_n), 4)},
@@ -135,6 +141,10 @@ def run_dunning_pp_analysis():
             "to_hell_g2_raw": round(g2_to_hell_raw, 1),
             "to_hell_g2_half_denom": round(g2_to_hell_half, 1),
             "for_ving_g2_raw": round(g2_for_ving_raw, 1),
+            "damn_est_construction_base": damn_est,
+            "fsb_est_construction_base": fsb_est,
+            "to_hell_g2_scaled_by_sampled_shares": round(g2_to_hell_scaled, 1),
+            "to_hell_fsb_scaled_upper_95_pct": round(100 * binom_zero_upper_95(fsb_est), 4),
         },
         "zero_upper_bounds_95": zeros,
     }
