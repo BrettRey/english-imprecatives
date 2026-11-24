@@ -2,6 +2,8 @@
 \input{.house-style/preamble.tex}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{longtable}
+\setlength{\headheight}{14pt}
 \newcommand{\qsep}{\textbar\allowbreak}
 \renewcommand{\thetable}{S\arabic{table}}
 \title{Supplementary materials}
@@ -16,17 +18,26 @@ Table~\ref{tab:appendix-queries} lists all Mark Davies queries (TV Corpus 325M; 
 
 Spoken BNC2014 (Sketch Engine \texttt{preloaded/bnc2014\_spoken\_tt3}, 11.83M tokens) ran eight lowercase CQL queries mirroring the same frames: \texttt{B2-1a} (\texttt{H13} + NP starters, 1,311 hits including 60 unaudited raw \mention{hang}; all 22 archaic/minced and 100/237 \texttt{DET/GEN} lines audited), \texttt{B2-1b} (\texttt{dammit\qsep{}goddammit}, 12), \texttt{B2-2} (6 \texttt{fuck}-euphemisms, all 11 audited), \texttt{B2-3} (\texttt{god} + heads, 17 hits: 10 \mention{god damn it} frequency-table strings and all 7 non-\mention{it} hits contextually audited), \texttt{B2-4a/b} (\texttt{to hell} [1] / \texttt{for .*ing} [3]), \texttt{B2-5a} (\texttt{confound}, 1), and \texttt{B2-5b} (\texttt{yay\qsep{}boo}, all 17 audited).
 
-\begin{table}[tbp]
-\centering
-\caption{Tier-2 Mark Davies query strings (T1a--T8b (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D8c on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
-\label{tab:appendix-queries}
-\scriptsize
-\renewcommand{\arraystretch}{0.88}
+{\scriptsize
+\renewcommand{\arraystretch}{0.92}
 \setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.8cm}>{\raggedright\arraybackslash}p{1.1cm}>{\raggedright\arraybackslash}p{7.0cm}>{\raggedright\arraybackslash}p{3.2cm}@{}}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.8cm}>{\raggedright\arraybackslash}p{1.1cm}>{\raggedright\arraybackslash}p{7.0cm}>{\raggedright\arraybackslash}p{3.2cm}@{}}
+\caption{Tier-2 Mark Davies query strings (T1a--T8c (incl.\ T7c, T7d), F1a--F5c, C1a--C3b, D1--D8c on the TV Corpus; G1--G8, C4 on GloWbE; exploratory COCA 1990--2019 checks ran \texttt{dang me} [7 hits] and \texttt{dang you} [5 hits]). H13 abbreviates all 13 core heads; H12 omits \mention{hang}; H7 abbreviates \mention{damn, blast, curse, fuck, screw, sod, bugger}.}
+\label{tab:appendix-queries} \\
 \toprule
 ID & Corpus & Query string & Audit scope \\
 \midrule
+\endfirsthead
+\multicolumn{4}{@{}l}{\textit{Table~\ref{tab:appendix-queries} (continued)}} \\
+\toprule
+ID & Corpus & Query string & Audit scope \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r@{}}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
 \texttt{T1a} & TV & \texttt{H13 it} & Freq + 100 KWIC; 100-line sample (Chart) \\
 \texttt{T1b} & TV & \texttt{dammit\qsep{}goddammit} & Freq table \\
 \texttt{T2}  & TV & \texttt{H13 you} & Freq + 98 KWIC; 100-line sample (Chart) \\
@@ -86,15 +97,15 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{G6}  & GloWbE & \texttt{damn him\qsep{}her\qsep{}them\qsep{}me\qsep{}us} & Full freq (368) + 100-line sample \\
 \texttt{G7}  & GloWbE & \texttt{drat \_j*} & Full corpus (0 hits) \\
 \texttt{G8}  & GloWbE & \texttt{that drat \_n*} & Full corpus (0 hits) \\
-\bottomrule
-\end{tabular}
-\end{table}
+\end{longtable}
+}
 
+\clearpage
 \section*{Overt \mention{God} within \mention{bless}}
 
 This table supports the contrast reported in §5.2 of the article (80/86 vs.\ 12/272).
 
-\begin{table}[h]
+\begin{table}[ht]
 \centering
 \caption{Illustrative lexical contrast within \mention{bless} across eight high-frequency expressions in the TV Corpus (325M words): raw \texttt{T4}/\texttt{T5} totals, overt \mention{God bless} (\texttt{F4a}), and residual tokens without overt \mention{God} (\texttt{T4}/\texttt{T5} minus \texttt{F4a}).}
 \label{tab:bless-split}
