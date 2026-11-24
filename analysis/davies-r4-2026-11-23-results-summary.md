@@ -92,3 +92,12 @@ KWIC audit (71 of 72 *thank you from* lines shown; first-pass codes by Claude Op
 ## D12: `damn|bless|curse|blast|screw|sod|bugger|darn|dang|drat you from` (TV Corpus, word forms; Brett, 2026-11-24)
 
 2 strings, both ordinary verbs: *I'll curse you from hell* (*The Bastard Executioner*, finite with subject), *screw you from behind* (*Shameless*, literal). 0 for *damn*, *bless* and the rest, so D10's absences aren't a tagging artifact.
+
+## 2026-11-24: `it for _v?g*` (TV, List view, no head slot)
+
+Query lacked the head slot, so it bears on the frame, not the heads. 171 strings / 117 types (List view, possibly sampled); 100 KWIC lines, none with a sampled head. Reason PP with `it` occurs (a) where `it` is the evaluated target (*punish it for pooping*, *criticise it for being dull*, *arrest it for speeding*) and (b) where `it` is non-referential or not the target and another participant is evaluated (*get it for messing with our boy*, *deserve it for being such a great guy*, *suck it for asking*, *appreciate it for helping me*). Raw lines: `data/davies/tv-it-for-vg-2026-11-24-raw.txt`. Still needed: `damn|fuck|screw|bless|sod|bugger it for _v?g*`. Rough benchmark at each head's T7b pronoun rate (audited for V-ing tokens / raw you+him+her+them+me strings): *damn* 11/1,688 × 20,107 *damn it* ≈ 131; *fuck* 17/10,043 × 1,842 ≈ 3; *screw* 13/3,044 × 1,625 ≈ 7.
+- D14 (`damn|fuck|screw|bless|sod|bugger it for _v?g*`, TV): **0 hits** (Brett, 2026-11-24). Benchmarks recomputed on the shared pronouns behind the 49 audited for V-ing tokens (you+him+her+them): *damn* 11/1,627 × 20,107 ≈ 136; *fuck* 17/8,202 × 1,842 ≈ 3.8; *screw* 13/2,593 × 1,625 ≈ 8.1. The head-less `it for _v?g*` run is D13.
+- D14 query string as typed by Brett in session (2026-11-24): `damn|fuck|screw|bless|sod|bugger it for _v?g*`, result zero.
+
+## Outside-corpus attestation checked 2026-11-24
+- *Yay the NHS!*: Bookmole's Blog, "Normal service will be resumed shortly", 3 May 2012, https://bookmole1.wordpress.com/2012/05/03/normal-service-will-be-resumed-shortly/ (page fetched and string found in the post body: "Bonus – all drugs for the next five years are FREE! Yay the NHS!"). A reader comment of 4 May 2012 on the same page has *Yay you!!!*. Raised by a GPT-6 Pro review; verified by Claude before use.
