@@ -1,15 +1,23 @@
 ---
 slug: english-imprecatives
 kind: paper
-title: 'The Grammar of English Subjectless Imprecatives and Benedictives: Lexical Asymmetries, Evaluative Modification, and Euphemistic Inheritance'
-stage: reframed_draft_pre_submission_checks
-external: https://github.com/BrettRey/english-imprecatives
-blocked_on: [brett-review]
+title: 'Damn him to hell, fuck me for giving a shit, thank you for coming: How Far Generalizations Reach in English'
+stage: complete
+external: in-review
+venue: English Language and Linguistics
+submitted: 2026-11-24
+blocked_on: [venue-response]
 updated: 2026-11-24
-next_action: 'Submission candidate is english-imprecatives-reframed.tex (english-imprecatives.tex retained; passes.py pinned to the reframed file). Submission checks 2026-11-24: quotation, terminology (after acronym fixes), build, blinding pass; cold read FAIL on the first run, PASS after the abstract and opening revision (question first, results led by where generalizing from damn/fuck fails, abstract ends on what the results rule out; rerun 2/3 advance, no MISSING, convergent problem statements); 20 registered passes outstanding. Next: work through the passes, then package and portal-fields record.'
+source: [STATUS.md, submission/ell-2026-11-24/SUBMITTED-2026-11-24.md]
+next_action: 'Await editorial assessment. Submission confirmation and exact uploaded files are archived in submission/ell-2026-11-24/. External peer review is not yet confirmed.'
 ---
 
-# STATUS.md: English Subjectless Imprecatives and Benedictives
+# STATUS.md: English imprecatives
+
+**Submitted to English Language and Linguistics on 24 November 2026.** ScholarOne confirmed receipt. The exact submitted title is recorded above. The submitted article, supplement, replication ZIP, LaTeX source ZIP and title page are archived in `submission/ell-2026-11-24/`; the confirmation and manuscript ID remain in that private folder. Await editorial assessment; external peer review is not yet confirmed.
+
+**2026-11-24 — Package preparation (before submission):** `submission/ell-2026-11-24/README.md`. Anonymous article 32 pp., 8,959 inclusive words; abstract 177 words; supplement 19 pp.; refreshed 38-file replication ZIP; separate title page and cover letter. Journal requirements checked live, formatting corrected in a separate copy, declarations confirmed, and package checks pass. Brett subsequently submitted these files; see the current status above. The records below describe earlier versions.
+
 
 **2026-11-23 (Gelman overhaul + B1 TV controls `D1`–`D4` + B2 Spoken BNC2014 calibration complete & pushed):** Public repo live at `https://github.com/BrettRey/english-imprecatives`. Both `english-imprecatives.pdf` (9,915 inclusive words, 21 pp.) and `english-imprecatives-blind.pdf` (9,916 inclusive words, 21 pp., gitignored) compile cleanly with 0 errors, 0 overfulls, 0 font warnings, 0 non-quote house-style flags, 0 AI-voice flags, 0 Fisher *p*-values, and 0 anonymity leaks.
 

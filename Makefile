@@ -4,7 +4,7 @@
 # Configuration
 LATEX = xelatex
 BIBER = biber
-MAIN = english-imprecatives
+MAIN = english-imprecatives-reframed
 OUTDIR = .
 
 # Targets

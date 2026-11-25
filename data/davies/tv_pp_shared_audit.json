@@ -1,0 +1,186 @@
+{
+  "source": "data/davies/tv_t1a_to_t8a_parsed.json",
+  "source_sha256": "71861c42e16f2594470f8f5543d5196911807574865b9a5e83567de9b4732bc5",
+  "shared_pronouns": [
+    "her",
+    "him",
+    "them",
+    "you"
+  ],
+  "correction": "T7b row 64 targets me, not context you; undisplayed bounds exclude nonshared pronouns.",
+  "T7a_to_hell": {
+    "by_head": {
+      "blast": {
+        "raw": 2,
+        "raw_shared": 2,
+        "displayed": 2,
+        "displayed_shared": 2,
+        "accepted_all": 1,
+        "accepted_shared": 1,
+        "undisplayed_shared": 0,
+        "undisplayed_nonshared": 0,
+        "shared_shows": 1
+      },
+      "damn": {
+        "raw": 101,
+        "raw_nonshared": 52,
+        "raw_shared": 49,
+        "displayed": 82,
+        "displayed_shared": 38,
+        "accepted_all": 73,
+        "accepted_shared": 32,
+        "displayed_nonshared": 44,
+        "undisplayed_shared": 11,
+        "undisplayed_nonshared": 8,
+        "shared_shows": 29
+      },
+      "dang": {
+        "raw": 1,
+        "raw_nonshared": 1,
+        "displayed": 1,
+        "displayed_nonshared": 1,
+        "accepted_all": 1,
+        "undisplayed_shared": 0,
+        "undisplayed_nonshared": 0,
+        "shared_shows": 0
+      }
+    },
+    "totals": {
+      "raw": 104,
+      "raw_nonshared": 53,
+      "raw_shared": 51,
+      "displayed": 85,
+      "displayed_shared": 40,
+      "accepted_all": 75,
+      "accepted_shared": 33,
+      "displayed_nonshared": 45,
+      "undisplayed_shared": 11,
+      "undisplayed_nonshared": 8,
+      "shared_shows": 29,
+      "all_shows": 62
+    },
+    "accepted_me_rows": []
+  },
+  "T7b_for_ving": {
+    "by_head": {
+      "bless": {
+        "raw": 28,
+        "raw_shared": 28,
+        "displayed": 20,
+        "displayed_shared": 20,
+        "accepted_all": 6,
+        "accepted_shared": 6,
+        "undisplayed_shared": 8,
+        "undisplayed_nonshared": 0,
+        "shared_shows": 6
+      },
+      "curse": {
+        "raw": 3,
+        "raw_shared": 2,
+        "raw_nonshared": 1,
+        "displayed": 2,
+        "displayed_shared": 2,
+        "accepted_all": 1,
+        "accepted_shared": 1,
+        "undisplayed_shared": 0,
+        "undisplayed_nonshared": 1,
+        "shared_shows": 1
+      },
+      "damn": {
+        "raw": 15,
+        "raw_shared": 14,
+        "raw_nonshared": 1,
+        "displayed": 13,
+        "displayed_shared": 12,
+        "accepted_all": 11,
+        "accepted_shared": 10,
+        "displayed_nonshared": 1,
+        "accepted_me": 1,
+        "undisplayed_shared": 2,
+        "undisplayed_nonshared": 0,
+        "shared_shows": 10
+      },
+      "darn": {
+        "raw": 1,
+        "raw_shared": 1,
+        "displayed": 1,
+        "displayed_shared": 1,
+        "accepted_all": 1,
+        "accepted_shared": 1,
+        "undisplayed_shared": 0,
+        "undisplayed_nonshared": 0,
+        "shared_shows": 1
+      },
+      "fuck": {
+        "raw": 30,
+        "raw_shared": 26,
+        "raw_nonshared": 4,
+        "displayed": 21,
+        "displayed_shared": 18,
+        "accepted_all": 20,
+        "accepted_shared": 17,
+        "displayed_nonshared": 3,
+        "accepted_me": 3,
+        "undisplayed_shared": 8,
+        "undisplayed_nonshared": 1,
+        "shared_shows": 17
+      },
+      "screw": {
+        "raw": 22,
+        "raw_shared": 21,
+        "raw_nonshared": 1,
+        "displayed": 15,
+        "displayed_shared": 14,
+        "accepted_all": 14,
+        "accepted_shared": 13,
+        "displayed_nonshared": 1,
+        "accepted_me": 1,
+        "undisplayed_shared": 7,
+        "undisplayed_nonshared": 0,
+        "shared_shows": 12
+      }
+    },
+    "totals": {
+      "raw": 99,
+      "raw_shared": 92,
+      "displayed": 72,
+      "displayed_shared": 67,
+      "accepted_all": 53,
+      "accepted_shared": 48,
+      "undisplayed_shared": 25,
+      "undisplayed_nonshared": 2,
+      "shared_shows": 47,
+      "raw_nonshared": 7,
+      "displayed_nonshared": 5,
+      "accepted_me": 5,
+      "all_shows": 50
+    },
+    "accepted_me_rows": [
+      {
+        "row": 7,
+        "head": "fuck",
+        "show": "Hand of God"
+      },
+      {
+        "row": 13,
+        "head": "fuck",
+        "show": "Shameless"
+      },
+      {
+        "row": 37,
+        "head": "fuck",
+        "show": "Dexter"
+      },
+      {
+        "row": 50,
+        "head": "screw",
+        "show": "Jericho"
+      },
+      {
+        "row": 64,
+        "head": "damn",
+        "show": "Babylon 5"
+      }
+    ]
+  }
+}

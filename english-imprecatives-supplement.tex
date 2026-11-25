@@ -3,6 +3,10 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\addbibresource{references-local.bib}
+\renewcommand{\thesection}{S\arabic{section}}
 \setlength{\headheight}{14pt}
 \newcommand{\qsep}{\textbar\allowbreak}
 \renewcommand{\thetable}{S\arabic{table}}
@@ -12,7 +16,9 @@
 \begin{document}
 \maketitle
 
-\section*{Corpus query strings and adjudication protocol}
+These materials document the query definitions, inventories and audits for the accompanying article, \emph{How Far Generalizations Reach in English}. Section~S1 gives the query inventory, Section~S2 the illustrative \mention{bless} comparison, and Sections~S3--S9 the corpus inventories and detailed audits. HEAD stands for a sampled lexical head; NP for noun phrase; PP for prepositional phrase; KWIC denotes a keyword-in-context concordance line.
+
+\section{Corpus query strings and adjudication protocol}\label{supp:queries}
 
 Table~\ref{tab:appendix-queries} lists all Mark Davies queries (TV Corpus 325M; GloWbE 1.9B; LIST view). Tier~1 scanned all 13 heads and 6 primary interjections before closed-class NP starters (CABNC, OANC) and any NP-starting CLAWS5 tag (\texttt{PNP}, \texttt{AT0}, \texttt{DPS}, \texttt{DT0}, \texttt{NP0}, \texttt{NN1}, \texttt{NN2}, \texttt{PNI}, \texttt{CRD}) in BNC Baby XML.
 
@@ -45,13 +51,13 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{T4}  & TV & \texttt{H13 the\qsep{}this\qsep{}that\qsep{}these\qsep{}those \_n*} & Top 100 + 100 KWIC; 100-line sample (Chart) \\
 \texttt{T5}  & TV & \texttt{H13 my\qsep{}your\qsep{}his\qsep{}her\qsep{}their \_n*} & Top 100 + 100 KWIC; 100-line sample (Chart) \\
 \texttt{T6}  & TV & \texttt{god H13 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them\qsep{}me\qsep{}us\qsep{}the\qsep{}this\qsep{}that\qsep{}my\qsep{}your\qsep{}his\qsep{}her} & Full freq + 100 KWIC \\
-\texttt{T7a} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full freq + all 85 KWIC \\
-\texttt{T7b} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq + all 72 KWIC \\
+\texttt{T7a} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full freq (104) + all 85 displayed KWIC \\
+\texttt{T7b} & TV & \texttt{H12 you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq (99) + all 72 displayed KWIC \\
 \texttt{T7c} & TV & \texttt{hang you\qsep{}him\qsep{}her\qsep{}them\qsep{}it to hell} & Full corpus (0 hits) \\
 \texttt{T7d} & TV & \texttt{hang you\qsep{}him\qsep{}her\qsep{}them\qsep{}me for \_v?g*} & Full freq (10 / 9 types) + all 10 KWIC \\
-\texttt{T8a} & TV & \texttt{H7 and H7 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq + all 7 KWIC \\
+\texttt{T8a} & TV & \texttt{H7 and H7 it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq (11) + all 7 displayed KWIC \\
 \texttt{T8c} & TV & \texttt{H7\qsep{}bless\qsep{}darn\qsep{}dang and H7\qsep{}bless\qsep{}darn\qsep{}dang it\qsep{}you\qsep{}him\qsep{}her\qsep{}them} & Full freq (11) + all 11 KWIC \\
-\texttt{T8b} & TV & \texttt{ouch\qsep{}oops\qsep{}ugh\qsep{}wow\qsep{}whoops\qsep{}yuck him\qsep{}her\qsep{}them} & Full freq + all 53 KWIC \\
+\texttt{T8b} & TV & \texttt{ouch\qsep{}oops\qsep{}ugh\qsep{}wow\qsep{}whoops\qsep{}yuck him\qsep{}her\qsep{}them} & Full freq (76) + all 53 displayed KWIC \\
 \midrule
 \texttt{F1a} & TV & \texttt{silly\qsep{}lucky\qsep{}poor\qsep{}yay\qsep{}boo you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + all 2 KWIC \\
 \texttt{F1b} & TV & \texttt{shame\qsep{}good\qsep{}kudos on\qsep{}for\qsep{}to you\qsep{}me\qsep{}him\qsep{}her\qsep{}them for \_v?g*} & Full freq + 100 KWIC \\
@@ -85,7 +91,7 @@ ID & Corpus & Query string & Audit scope \\
 \texttt{D10} & TV & \texttt{\_v* you from} (verb + \mention{you from}) & Freq table (1,049, POS-tagged); KWIC for all 72 \mention{thank you from} (71 shown), 1 \mention{fuck you from}, 4 \mention{hang you from} \\
 \texttt{D11} & TV & \texttt{damn\qsep{}bless\qsep{}fuck\qsep{}screw\qsep{}curse\qsep{}thank you\qsep{}him\qsep{}her\qsep{}them from the bottom of my\qsep{}our heart} & Full freq (24) + all 24 KWIC \\
 \texttt{D12} & TV & \texttt{damn\qsep{}bless\qsep{}curse\qsep{}blast\qsep{}screw\qsep{}sod\qsep{}bugger\qsep{}darn\qsep{}dang\qsep{}drat you from} (word forms) & Full freq (2) + both KWIC \\
-\texttt{D13} & TV & \texttt{it for \_v?g*} (no head slot; List view, possibly sampled) & Freq (171 strings, 117 types) + 100 KWIC \\
+\texttt{D13} & TV & \texttt{it for \_v?g*} (no head slot) & Full freq (171 strings, 117 types; Chart total also 171) + 100 KWIC \\
 \texttt{D14} & TV & \texttt{damn\qsep{}fuck\qsep{}screw\qsep{}bless\qsep{}sod\qsep{}bugger it for \_v?g*} & Full freq (0) \\
 \midrule
 \texttt{G1}  & GloWbE & \texttt{drat\qsep{}darn\qsep{}dang\qsep{}dash the\qsep{}this\qsep{}that\qsep{}these\qsep{}those\qsep{}my\qsep{}your\qsep{}his\qsep{}her \_n*} & Top 100 (20 varieties) \\
@@ -107,7 +113,7 @@ ID & Corpus & Query string & Audit scope \\
 }
 
 \clearpage
-\section*{Overt \mention{God} within \mention{bless}}
+\section{Overt \mentionhead{God} within \mentionhead{bless}}\label{supp:bless}
 
 This table supports the contrast reported in the article's section on overt \mention{God} (80/86 vs.\ 12/272).
 
@@ -138,5 +144,256 @@ Heart / soul idioms & \mention{my soul}        & 69 &  4 & 65 &  6\% \\
 \multicolumn{6}{@{}p{12.4cm}@{}}{\scriptsize \textsuperscript{a}Residual counts equal tokens without immediately preceding \mention{God}; because \texttt{T4}/\texttt{T5} are raw string totals, residuals can include ordinary verbal uses (e.g.\ liturgical \mention{to bless the child}) or alternative subjects (\mention{Lord bless}). \textsuperscript{b}Includes song-lyric echoes of \mention{God bless the child} (\mention{that's got his own}).}
 \end{tabular}
 \end{table}
+
+
+\clearpage
+\section{Tier-1 coding, inventory and coverage checks}\label{supp:tier1}
+
+Verified Tier-1 tokens are coded by target into the seven classes of Table~\ref{tab:tier1-pooled}: \mention{it} (\mention{damn it}, \mention{sod it}); routine \mention{bless you}; other \mention{you}; other accusative pronouns (\mention{fuck me}, \mention{bugger him}); demonstratives (\mention{sod this}); genitive body-part and soul formulae (\mention{bless his heart}); and open full NPs (\mention{Damn the bell!}). Routine \mention{bless you} takes priority over \mention{you}, and body-part formulae over full NPs. Optatives with overt \mention{God} are counted separately.
+
+Exclusions remove ordinary transitive verbs (\mention{to hang the curtains}, \mention{to darn her own stockings}), negative quantifier idioms (\mention{bugger/sod/fuck all}), standalone interjections before a new clause (\mention{Fuck. That would have been amusing}), citations of the word, proper nouns (\emph{Dash}), and West African ditransitive \mention{dash} (\enquote{give, tip}) in GloWbE.
+
+\begin{table}[!ht]
+\centering
+\caption{Pooled deduplicated Tier-1 results across CABNC, non-overlapping BNC Baby XML, and OANC (19,947,325 deduplicated words). Bookkeeping holds per row ($\text{Raw} = \text{Verified} + \text{God} + \text{Excl.}$); \enquote{Files} counts distinct files containing verified tokens (143 unique files overall).}
+\label{tab:tier1-pooled}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrrrrrrrrrrr@{}}
+\toprule
+Head & Raw & Verif. & Files & \mention{it} & \mention{bless you} & \mention{you} & Acc.\ pr. & Dem & Gen-body & Full NP & \mention{God} & Excl. \\
+\midrule
+\mention{damn}   &  80 & \textbf{33} & 21 & 17 &  0 &  7 &  2 &  0 &  0 &  7 &  3 &  44 \\
+\mention{bless}  & 124 & \textbf{82} & 56 &  1\textsuperscript{a} & 31 &  0 & 18 &  0 & 31 &  1 & 20 &  22 \\
+\mention{fuck}   & 101 & \textbf{46} & 30 & 17 &  0 & 10 &  9 &  5 &  0 &  5 &  0 &  55 \\
+\mention{sod}    &  29 & \textbf{21} & 16 &  8 &  0 &  2 &  4 &  3 &  0 &  4 &  0 &   8 \\
+\mention{bugger} &  43 & \textbf{21} & 19 &  7 &  0 &  0 & 10 &  2 &  0 &  2 &  0 &  22 \\
+\mention{screw}  &  42 & \textbf{13} &  9 &  3 &  0 &  3 &  1 &  1 &  0 &  5 &  0 &  29 \\
+\mention{blast}  &  49 &  \textbf{1} &  1 &  1 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  48 \\
+\mention{curse}  &  14 &  \textbf{0} &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  14 \\
+\mention{hang}   & 103 &  \textbf{1} &  1 &  0 &  0 &  0 &  1 &  0 &  0 &  0 &  0 & 102 \\
+\mention{drat}   &   1 &  \textbf{0} &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &   1 \\
+\mention{darn}   &   6 &  \textbf{2} &  2 &  2 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &   4 \\
+\mention{dash}   &   4 &  \textbf{0} &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &   4 \\
+\mention{dang}   &   0 &  \textbf{0} &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &  0 &   0 \\
+\midrule
+\textbf{Total}   & \textbf{596} & \textbf{220} & \textbf{143} & \textbf{56} & \textbf{31} & \textbf{22} & \textbf{45} & \textbf{11} & \textbf{31} & \textbf{24} & \textbf{23} & \textbf{353} \\
+\bottomrule
+\multicolumn{13}{@{}p{12.6cm}@{}}{\scriptsize \textsuperscript{a}Referential \mention{And bless it} (OANC \emph{Slate}), referring back to an open artistic culture; all other \mention{it}-column tokens are non-referential formulae.}
+\end{tabular}
+\end{table}
+
+Transcriber capitalization differs across the compared uses. None of 80 verified subjectless tokens in CABNC has a capital between head and NP, against 9 of 23 primary-interjection sequences (\mention{Ouch My foot}) and 4 of 7 standalone \mention{damn} or \mention{fuck} tokens (\mention{Fuck. That would have been amusing}). The coding excluded standalone interjections before a new clause, and capitals were one rough cue to such boundaries (the article's methods section), so the comparison isn't fully independent of the coding.
+
+The broader BNC Baby search recovered three bare nouns or proper names that the closed-class searches miss (\mention{Damn McIllvanney}, \mention{Oh, screw Jesus Christ}, \mention{night, bless mummy and dad}). It also exposed an ambiguity: \mention{Damn DTs.} is either a subjectless imprecative or prenominal \mention{damn} (compare \mention{Damn rubbish.}; \citealp[35 n.\ 29]{portner2026}). That ambiguity is why the large-corpus queries require an overt determinative, genitive pronoun or accusative pronoun.
+
+Tier~1 also shows regional skew, though the registers differ too much for a controlled UK--US comparison. \mention{Sod} and \mention{bugger} each occur 20 times in the British data and once in the American. Overt \mention{God} already concentrates on the theological heads: it occurs in 20 of 102 \mention{bless} tokens and 3 of 36 \mention{damn} tokens (all \mention{God damn it}), and in none of 105 tokens of the other seven attested heads.
+
+The peripheral-head search ranked clause-initial bare words before an accusative pronoun in BNC Baby by the log-likelihood ratio $G^2$ \citep{dunning1993}. This was an exploratory search for candidates outside the inherited inventory.
+
+Apart from \mention{thank} and \mention{excuse}, ordinary imperatives and discourse particles, \mention{bless} ranks highest among imprecative and benedictive heads (20 tokens in 8 files), beside \mention{goodness me!}. Searching for heads proposed in the literature turns up peripheral British \mention{blow} (\mention{ooh, blow this for a lark}, \mention{blow me!}), \mention{stuff} (\mention{stuff it!}, \mention{stuff this!}) and \mention{stone} (\mention{stone the crows}). The thirteen heads are a sampling frame, not a closed inventory. Other bare heads take the same form. \mention{Thank you} has non-reflexive \mention{you}, like \mention{Damn you}, so \mention{thank} shares the second-person facts in example~(2b) of the article, though it hasn't been shown to share the first-person one, and mirative \mention{Fancy that!} expresses neither a curse nor a blessing. Section~5.3 of the article compares \mention{thank}.
+
+\clearpage
+\section{TV inventory and control audits}\label{supp:tv}
+
+The table gives the complete raw inventory; univerbated \mention{dammit} and \mention{goddammit} add another 2,004 tokens. Raw frequencies include ordinary verbs and other uses. The following audits distinguish them from the subjectless pattern.
+
+\begin{table}[!ht]
+\centering
+\caption{TV Corpus (325M words of subtitles) raw frequency profile across all 13 core heads (\texttt{T1a}, \texttt{T2}, \texttt{T3}, \texttt{T6}, \texttt{T7a}, \texttt{T7b}). Raw totals for \texttt{T1a}--\texttt{T3} include ordinary transitive verbs on homophonous heads (\mention{hang}, \mention{screw}, \mention{fuck}, \mention{blast}); \texttt{T3} covers \mention{him}, \mention{her}, \mention{them}, \mention{me} and \mention{us}; \texttt{T7b} lists raw tokens / unique query types; \mention{hang} was searched separately in both PP frames.}
+\label{tab:tv-paradigm}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Head & X \mention{it} (\texttt{T1a}) & X \mention{you} (\texttt{T2}) & X pron\textsubscript{acc} (\texttt{T3}) & \mention{God} X NP (\texttt{T6}) & \mention{to hell} (\texttt{T7a}) & \mention{for} V-ing (\texttt{T7b}, raw) \\
+\midrule
+\mention{damn}   & 20,107 &  1,400 &   295 & 2,229 & 101 & 15 / 11 \\
+\mention{bless}  &     51 &  2,431 & 1,223 & 1,802 &   0 & 28 / 20 \\
+\mention{fuck}   &  1,842 &  6,869 & 3,237 &     2 &   0 & 30 / 25 \\
+\mention{sod}    &    129 &     26 &    27 &     0 &   0 &  0 /  0 \\
+\mention{bugger} &     41 &     16 &    67 &     0 &   0 &  0 /  0 \\
+\mention{screw}  &  1,625 &  1,936 & 1,212 &     0 &   0 & 22 / 17 \\
+\mention{blast}  &    234 &    127 &   318 &     3 &   2 &  0 /  0 \\
+\mention{curse}  &     15 &    247 &   120 &     9 &   0 &  3 /  3 \\
+\mention{hang}   &    634 &    344 & 1,005 &     0 &   0 & 10 / 9 \\
+\mention{drat}   &      7 &      6 &     2 &     0 &   0 &  0 /  0 \\
+\mention{darn}   &    613 &     25 &    12 &    11 &   0 &  1 /  1 \\
+\mention{dash}   &     65 &      4 &    12 &     0 &   0 &  0 /  0 \\
+\mention{dang}   &    553 &      4 &     4 &    28 &   1 &  0 /  0 \\
+\midrule
+\textbf{Total}   & \textbf{25,916} & \textbf{13,435} & \textbf{7,534} & \textbf{4,084} & \textbf{104} & \textbf{109 / 86} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Raw counts overstate how often the pattern occurs. In 100-line samples of each frame, subjectless imprecatives and benedictives make up 78 of the HEAD + \mention{it} lines, 62 of HEAD + \mention{you}, 45 of HEAD + accusative pronoun, 47 of HEAD + determinative + N and 35 of HEAD + genitive + N. Ordinary verbs take 12, 14, 39, 46 and 58 lines (\mention{they'll hang her}, \mention{don't fuck it up}, \mention{I'll blast the hatch}), mainly \mention{hang}, \mention{fuck} and \mention{screw}, with \mention{blast} and \mention{bless} common in the determinative frame. Optatives with an overt subject, nearly always \mention{God}, take 3 to 15 lines per frame (\mention{God damn it}, \mention{God bless you}), and \mention{what the fuck you}\dots\ takes 12 of the \mention{you} lines.
+
+Even so, the concordances for HEAD + determinative + N and HEAD + genitive + N verify open lexical NPs across the living heads: \mention{Screw the coin!} (\emph{Modern Family}), \mention{Screw the committee, screw the party} (\emph{The Art of More}), \mention{Sod the bar codes!} (\emph{Code of a Killer}), \mention{Hang the casting committee} (\emph{Room at the Top}), \mention{Damn that freedom of information act} (\emph{Glory Daze}), and \mention{Oh, darn the luck} (\emph{The Simpsons}).
+
+Three sets of controls sharpen the profile. First, primary interjections and \mention{yay}/\mention{boo} take no lexical NPs here either. Of 53 displayed lines for the six primary interjections + \mention{him/her/them}, 52 are the verb \mention{wow} (\enquote{impress}) and one is a coerced verb (\mention{when the pain can't ouch him}); none of 13 lines of \mention{yay}/\mention{boo} + determinative or genitive + N has an expressive complement.
+
+Second, two heads coordinated over one pronoun (\mention{damn and blast it}) give 11 tokens, all from British period drama or comedy (\emph{Blandings}, \emph{Jeeves and Wooster}, \emph{Rumpole of the Bailey}, \emph{Monty Python}), and no other pairing occurs, even with \mention{bless}, \mention{darn} and \mention{dang} added to the search. \mention{Fuck and screw you} is unattested; speakers coordinate whole imprecatives instead (\mention{Fuck the Store and fuck the Troubadour}; in Tier~1, \mention{Screw him. And screw his mother Mary too!}, BNC Baby).
+
+Third, the archaic heads live mostly in period drama. \mention{Dash it} is an imprecative in 59 of 65 lines, heavily from period drama (\emph{Jeeves and Wooster} alone supplies 14). Non-taboo \mention{confound} gives 75 imprecatives in a 100-line sample of its 122 hits, including 8 full NPs (\mention{Confound that man!}, \mention{Confound the game!}), but 43 of the 75 come from one series, \emph{A Nero Wolfe Mystery}. \mention{Damn}, \mention{bless}, \mention{fuck}, \mention{screw}, \mention{sod} and \mention{bugger}, by contrast, appear across contemporary settings.
+
+\clearpage
+\section{Reflexive concordance audit}\label{supp:reflexives}
+
+The binding argument is presented in the article's morphosyntactic diagnostics. The supporting \texttt{D9} search returned 680 strings of \mention{fuck} followed by a reflexive. About 45 are clause-initial \mention{Fuck yourself} after punctuation and 440 are \mention{go fuck yourself}; clause-initial \mention{fuck himself}, \mention{herself} or \mention{itself} doesn't occur.
+
+All 56 \mention{fuck myself} lines have a subject or controller for the reflexive (\mention{He told me to go fuck myself}, \mention{should I just go fuck myself?}) or echo the previous turn (\mention{Go fuck yourself.} \mention{Go fuck myself?}). The one after a question mark continues a list of the speaker's options (\mention{what shall I do after I've pissed myself? Fuck myself? Eat myself?}, \emph{Peep Show}), where the understood subject is the speaker and the reflexive is expected. None is a self-curse.
+
+Of 106 third-person reflexives, 89 follow \mention{go} (\mention{go fuck himself} 64) and none follows punctuation. The distribution is consistent with an antecedent in each case, though those lines weren't inspected. The frequency-table position check and the contextual audit of \mention{myself} have different evidential standing.
+
+\clearpage
+\section{PP comparison: full audit and calculations}\label{supp:pp}
+
+The article compares the pronouns shared by \texttt{T7a} and \texttt{T7b}: \mention{you/him/her/them}. This section gives the full raw, displayed and audited totals, followed by the calculations and supplementary controls.
+
+\begin{table}[!ht]
+\centering
+\caption{Reconciled Goal PP \mention{to hell} (\texttt{T7a}) vs.\ Reason PP \mention{for} V-ing (\texttt{T7b}) in the TV Corpus (325M words), showing raw totals, displayed concordance lines, all audited subjectless tokens, and strictly shared-pronoun (\mention{you/him/her/them}) audited tokens and distinct shows.}
+\label{tab:pp-full-audit}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrrrrrr@{}}
+\toprule
+ & \multicolumn{5}{c}{\texttt{T7a}: Goal PP \mention{to hell}} & \multicolumn{5}{c}{\texttt{T7b}: Reason PP \mention{for} V-ing} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-11}
+Head & Raw & KWIC & All & Shared & Shows\textsuperscript{c} & Raw (tok/typ) & KWIC & All & Shared & Shows\textsuperscript{c} \\
+\midrule
+\mention{damn}   & 101 & 82 & 73 & \textbf{32} & 29 & 15 / 11 & 13 & 11 & \textbf{10} & 10 \\
+\mention{dang}   &   1 &  1 &  1 &  \textbf{0} &  0 &  0 /  0 &  0 &  0 &  \textbf{0} &  0 \\
+\mention{darn}   &   0 &  0 &  0 &  \textbf{0} &  0 &  1 /  1 &  1 &  1 &  \textbf{1} &  1 \\
+\mention{blast}  &   2 &  2 &  1\textsuperscript{a} &  \textbf{1}\textsuperscript{a} &  1 &  0 /  0 &  0 &  0 &  \textbf{0} &  0 \\
+\mention{fuck}   &   0 &  0 &  0 &  \textbf{0} &  0 & 30 / 25 & 21 & 20 & \textbf{17} & 17 \\
+\mention{screw}  &   0 &  0 &  0 &  \textbf{0} &  0 & 22 / 17 & 15 & 14 & \textbf{13} & 12 \\
+\mention{bless}  &   0 &  0 &  0 &  \textbf{0} &  0 & 28 / 20 & 20 &  6 &  \textbf{6} &  6 \\
+\mention{curse}  &   0 &  0 &  0 &  \textbf{0} &  0 &  3 /  3 &  2 &  1 &  \textbf{1} &  1 \\
+Other 4\textsuperscript{b} & 0 & 0 & 0 & \textbf{0} & 0 & 0 / 0 & 0 & 0 & \textbf{0} & 0 \\
+\midrule
+\textbf{Total}   & \textbf{104} & \textbf{85} & \textbf{75} & \textbf{33} & \textbf{29} & \textbf{99 / 77} & \textbf{72} & \textbf{53} & \textbf{48} & \textbf{47} \\
+\bottomrule
+\multicolumn{11}{@{}p{12.6cm}@{}}{\scriptsize \textsuperscript{a}\texttt{T7a} removes 10/85 KWICs (4 finite/modal \mention{damn}, 1 literal \mention{blast}, 5 overt \mention{God}); the sole retained \mention{blast} is coordinated \mention{Damn, and blast you to hell} (\emph{The Forsyte Saga}). \texttt{T7b} removes 19/72 (3 finite/modal theological \mention{curse}/\mention{bless}, 2 nominalized imprecative quotes, 14 overt \mention{God}: \mention{bless} 12, \mention{damn} 2; 0 finite \mention{fuck}/\mention{screw}). \textsuperscript{b}\mention{sod}, \mention{bugger}, \mention{drat}, \mention{dash}; \mention{hang}, searched separately, has no \mention{to hell} hits, and all 10 \mention{for} V-ing hits are ordinary verbs (\mention{They'll hang me for stealing food}). \textsuperscript{c}Shared-pronoun unique shows (\emph{Forsyte Saga} overlaps \mention{damn}/\mention{blast} in \texttt{T7a}: 30 head--show pairs / 29 shows; \texttt{T7b}: 47 / 47; all-audited: \texttt{T7a} 62, \texttt{T7b} 50).}
+\end{tabular}
+\end{table}
+
+The shared-pronoun subsets contain 51 raw \mention{to hell} hits with 40 displayed lines and 92 raw \mention{for} V-ing hits with 67 displayed lines. Among the audited shared-pronoun tokens, \mention{damn} supplies 32 of 33 \mention{to hell} tokens (97\%), and \mention{damn} with \mention{darn} supplies 11 of 48 \mention{for} V-ing tokens (23\%). I bound these shares to account for the undisplayed hits. On the shared pronouns, all 11 undisplayed \mention{to hell} hits have \mention{damn}, which can only raise its share (97--98\%). The 25 undisplayed \mention{for} V-ing hits include 2 with \mention{damn} and 23 with other heads, so the share of \mention{damn} and its euphemisms there lies between 15\% and 26\% however those lines turn out. The gap remains above 70 percentage points.
+
+The contrast persists after conditioning on raw shared-pronoun bases. Per 1,000 raw strings of each head + \mention{you/him/her/them} (Table~\ref{tab:tv-paradigm}'s pronoun columns without \texttt{T3}'s \mention{me} and \mention{us}), the verified counts give lower bounds because not every candidate line was displayed; adding all undisplayed candidates gives the upper end of each range. On that basis, \mention{damn} has at least 19.7 \mention{to hell} tokens per 1,000 raw strings (range 19.7--26.4) and at least 6.1 \mention{for} V-ing tokens (6.1--7.4). \mention{Screw}, \mention{fuck} and \mention{bless} have verified lower bounds between 1.9 and 5.0 \mention{for} V-ing tokens (\mention{screw} 5.0--7.7, \mention{fuck} 2.1--3.0, \mention{bless} 1.9--4.5) but no \mention{to hell} at all, across 13,908 strings ($G^2 = 145$). The samples in Section~\ref{supp:tv} put 39\% of those strings outside the pattern (129 sampled lines for the three heads, 14 for \mention{damn}); scaling each head's strings by its sampled share in each frame leaves about 8,500 estimated construction opportunities for the three heads (and about 1,370 for \mention{damn}), and still gives $G^2 = 127$. \mention{Damn} occurs with both PPs; its contrast with \mention{screw}, \mention{fuck} and \mention{bless} concerns \mention{to hell}. Example (\ref{ex:supp-reason}) gives \mention{for} V-ing tokens for five of the six heads that take the frame: \mention{fuck} (\ref{ex:supp-reason}a, b), \mention{screw} (\ref{ex:supp-reason}c), \mention{bless} (\ref{ex:supp-reason}d), \mention{curse} (\ref{ex:supp-reason}e) and \mention{darn} (\ref{ex:supp-reason}f), the last a jocular mock-curse.
+
+The $G^2$ values are descriptive measures of association \citep{dunning1993}, with no independent-token significance test \citep{kilgarriff2005}.
+
+\ea\label{ex:supp-reason}
+\ea \mention{Fuck her for killing herself.} \hfill (TV Corpus, \emph{13 Reasons Why})
+\ex \mention{Fuck them for siding with a cowardly, sniveling shit of a mutineer.} \hfill (TV Corpus, \emph{Black Sails})
+\ex \mention{Screw you for putting me in this position.} \hfill (TV Corpus, \emph{How to Get Away with Murder})
+\ex \mention{Well, bless him for trying.} \hfill (TV Corpus, \emph{The Grand Tour})
+\ex \mention{Curse you for messing with mother nature!} \hfill (TV Corpus, \emph{Inspector Gadget})
+\ex \mention{Darn you for raising us so well.} \hfill (TV Corpus, \emph{Good Luck Charlie})
+\z
+\z
+
+
+
+The searches find 37 subjectless \mention{fuck}/\mention{screw} + pronoun + \mention{for} V-ing tokens and four with retaliatory particle verbs (Article Section~5.3), but none after finite or infinitival \mention{fuck}/\mention{screw} + pronoun. An audited base of ordinary transitive uses would be needed to compare their rates; these counts establish where the frame is attested.
+
+A lexical NP target is possible too (\ref{ex:supp-np}a--c). In (\ref{ex:supp-np}d) the reason PP occurs with overt \mention{God}, compatible with Position~A for \mention{bless}. With \mention{all} or \mention{both} after the pronoun, the main split recurs: every subjectless \mention{to hell} token has \mention{damn}, while \mention{for} V-ing occurs with \mention{bless}, \mention{fuck} and \mention{damn} (\mention{Fuck you all for thinking\dots}, \emph{Black Mirror}).
+
+\ea\label{ex:supp-np}
+\ea \mention{Fuck the Store and fuck the Troubadour and fuck that shithead for betting on you dying\dots} \hfill (TV Corpus, \emph{I'm Dying Up Here})
+\ex \mention{Bless your heart for helping Linette out in this way.} \hfill (TV Corpus, \emph{The Client List})
+\ex \mention{Curse your father for making me feed him.} \hfill (TV Corpus, \emph{Married with Children})
+\ex \mention{\dots but God bless the kids for trying to save it.} \hfill (TV Corpus, \emph{The Middle})
+\z
+\z
+
+
+
+The restriction holds where \mention{it} doesn't refer. Of the 104 raw \mention{to hell} strings in \texttt{T7a}, 52 are \mention{damn it to hell} (some after overt \mention{God}) and one is \mention{dang it to hell}, whereas \mention{fuck it} and \mention{screw it}, with 1,842 and 1,625 raw strings (Table~\ref{tab:tv-paradigm}), have none, where \mention{damn}'s raw rate predicts four or five each. The one \mention{to hell} token in Spoken BNC2014 is \mention{damn it to hell} too (Section~\ref{supp:speech}). A non-referential \mention{it} gives \mention{to hell} nothing to consign, so its restriction to \mention{damn} can't rest solely on a referent being consigned; whether it's lexical, a residue of \mention{damn}'s meaning in the formula, or both, these counts don't say.
+
+The reason PP behaves differently with \mention{it}. A word-form search for head + \mention{it for} V-ing over \mention{damn}, \mention{fuck}, \mention{screw}, \mention{bless}, \mention{sod} and \mention{bugger} (\texttt{D14}) returns no hits in the TV Corpus. Four of these heads take the PP with other complements; \mention{curse} and \mention{darn}, which also do so, weren't included in this search. At each head's rate after \mention{you}, \mention{him}, \mention{her} and \mention{them}, the raw strings give benchmarks of over a hundred tokens for \mention{damn it}, about eight for \mention{screw it}, four for \mention{fuck it} and fewer than one for \mention{bless it}. The zero is informative mainly for \mention{damn it}.
+
+Those raw bases include referential uses and formulae, without an audit separating them. Elsewhere, \mention{it for} V-ing occurs both when the referent of \mention{it} is evaluated (\mention{He wanted to punish it for pooping in his yard}, \emph{iZombie}) and when \mention{it} picks out nothing and someone else is evaluated (\mention{You're gonna get it for messing with our boy}, \emph{Adventure Time}, an idiom for punishment; \texttt{D13}).
+
+
+
+An inanimate lexical-NP target is attested once in GloWbE (\mention{darn the rains for messing with our social scene}; Section~\ref{supp:euphemisms}). How widely inanimate targets accept \mention{for} V-ing across heads, and whether they depend on personification (\mention{Damn this printer for jamming again!}), remain questions for judgment studies. Section~\ref{supp:euphemisms} considers analogical extension of \mention{to hell} in \mention{Eff you all to H!} (example~\ref{ex:supp-euphemisms}c).
+
+\section{Sender and sincerity \mentionhead{from} phrases}\label{supp:from}
+
+\mention{Thank} also takes \mention{from} phrases in far greater absolute numbers than the sampled heads, though no denominator for \mention{thank you} was audited. In a frequency table of verb + \mention{you from} (\texttt{D10}), \mention{thank} has 72 strings; of 71 inspected, 21 name the thankers (\mention{thank you from all of us}), 31 state the sincerity of the act (\mention{from the bottom of my heart}), 18 use \mention{thank you} as a noun (\mention{a thank you from the mayor}), and one is elliptical for rescue (\mention{thank you from a fate worse than death}).
+
+The sampled heads supply one joke on the sender phrase (\mention{Fuck you from? The Emerald Forest?}, \emph{Survivor's Remorse}) and four literal \mention{hang you from} lines, and a search on word forms over \mention{damn}, \mention{bless}, \mention{curse}, \mention{blast}, \mention{screw}, \mention{sod}, \mention{bugger}, \mention{darn}, \mention{dang} and \mention{drat} (\texttt{D12}) finds two strings, both ordinary verbs (\mention{I'll curse you from hell}, \mention{screw you from behind}), with none for \mention{damn} or \mention{bless}.
+
+A search on word forms for \mention{damn}, \mention{bless}, \mention{fuck}, \mention{screw}, \mention{curse} and \mention{thank} + pronoun + \mention{from the bottom of my/our heart} (\texttt{D11}) finds 24 strings, all with \mention{thank}: 8 bare \mention{Thank you from the bottom of my heart} and 16 with an overt subject or controller (\mention{I thank you}, \mention{I want to thank you}).
+
+Outside the corpora, a Facebook message quoted in a court opinion ends \mention{Fuck you from the bottom of my heart} (\emph{In the Interest of O.W.}, Iowa Court of Appeals, no.~24-0862, 9 January 2025, p.~9). The sender phrase names the thanker, the role a speaker subject has in \mention{I thank you}, which is compatible with a reduced-performative analysis of \mention{thank you}; it doesn't diagnose an understood subject, since an act has a source whether or not that source is a subject.
+
+\clearpage
+\section{Euphemism diagnostics and extended examples}\label{supp:euphemisms}
+
+The minced forms \mention{darn}, \mention{dang} and \mention{drat} (see the footnote in the article's morphosyntactic diagnostics) were checked against \mention{damn} in GloWbE and the TV Corpus (Table~\ref{tab:minced}), and six euphemisms of \mention{fuck} in the TV Corpus. They show what I'll call \term{partial euphemistic correspondence}, a descriptive label for occurring in many of the source's frames in different proportions; where a frame is unattested, the counts are mostly too small to show that it's unavailable.
+
+\begin{table}[!ht]
+\centering
+\caption{Minced-head diagnostics across 1.9B-word GloWbE (\texttt{G1}--\texttt{G4}) and 325M-word TV Corpus (\texttt{F5a}, \texttt{F5b}). \texttt{G1} and \texttt{G2} give verified imprecatives / audited lines (from \texttt{G1a}, \texttt{G1b} and \texttt{G2a}; the \mention{damn} baselines are \texttt{G5} and \texttt{G6}); \texttt{G3a} and \texttt{G3b} give totals, with sample audits in note e; \texttt{F5a} and \texttt{F5b} are KWIC-audited. \mention{Dash} is left out because its curse sense is nearly absent from GloWbE: 1 of its 87 pronoun hits (\mention{he would have done it long ago, dash him!}) and at most 2 in a 100-line sample of full-NP hits, the rest being literal \mention{dash} (\mention{dash his hopes}), West African \mention{dash} \enquote{give} (\mention{dash me a Murano}) and the noun. \mention{Dash it} appears in Section~\ref{supp:tv}.}
+\label{tab:minced}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Head & \texttt{G1} Full NP\textsuperscript{a} & \texttt{G2} Pron\textsubscript{acc}\textsuperscript{f} & \texttt{G3a} \mention{that} X N\textsuperscript{e} & \texttt{G3b} X ADJ\textsuperscript{e} & \texttt{F5a} \mention{be} V-ed & \texttt{G4} Past V & \texttt{F5b} Fin./Inf. \\
+\midrule
+\mention{darn} / \mention{darned}  & 36 / 51 & 10 / 13 & 120 / 37 & 3,247 / 558 & 103 & \textbf{0} & \textbf{0}\textsuperscript{b} \\
+\mention{dang} / \mention{danged}  &  5 / 20 &  2 / 11 &  40 / 4 &   278 /  23 &   9 & \textbf{0} & \textbf{0} \\
+\mention{drat} / \mention{dratted} &  0 /  0 &  2 /  2 &   0 / 16 &     0 /   2 &   0 & \textbf{0} & \textbf{0} \\
+\midrule
+\mention{damn} (baseline)          & 53 / 100\textsuperscript{d} & 64 / 100\textsuperscript{d} & 512 & 11,869 & 1,421 & 9\textsuperscript{c} & 6 \\
+\bottomrule
+\multicolumn{8}{@{}p{12.6cm}@{}}{\scriptsize \textsuperscript{a}All lines audited for the minced heads; the non-imprecative \mention{darn} lines are mostly the mending verb (\mention{darn his Sunday socks}). \textsuperscript{b}\texttt{F5b} (49 hits): 41 \mention{curse}, 6 \mention{damn}, 2 literal mending \mention{darn} (\mention{to darn her own stockings}, \emph{War \& Peace}; \mention{darn them up}, \emph{Lark Rise}), 0 curse-sense. \textsuperscript{c}\texttt{C4} (\texttt{damned}/\texttt{cursed} in the \texttt{G4} frame): 297 hits (288 \mention{cursed}, 9 \mention{damned}) / 35 types / 20 varieties; a 100-line sample is all finite verbs (\mention{he cursed him}), so the frame does find them. \textsuperscript{d}100-line samples of 880 (\texttt{G1}) and 368 (\texttt{G2}) hits. \textsuperscript{e}In 100-line samples, the form is attributive in 99 of 100 \mention{that damn} lines, 49 of 51 \mention{darn}, 20 of 20 \mention{darned}, 18 of 19 \mention{dang}, 1 of 1 \mention{danged} and 6 of 6 \mention{dratted} lines; it modifies the adjective in 87 of 100 \mention{damn} + ADJ lines (most of the rest modify an adjective + noun, as in \mention{those damn long Fangs}), 99 of 100 \mention{darn}, 90 of 100 \mention{darned} and 90 of 100 \mention{dang} lines. \textsuperscript{f}Includes both targeted curses and bleached subjectless oaths on \mention{me} (targeted + bleached): \mention{darn} 9 + 1, \mention{dang} 0 + 2 (\mention{Well dang me sideways}), \mention{drat} 2 + 0, \mention{damn} 55 + 9 (\mention{damn me} (\mention{if})).}
+\end{tabular}
+\end{table}
+
+First, the minced forms don't appear in the curse sense as finite or infinitival verbs, but \mention{damn} itself does so only 9 times in GloWbE and 6 in the TV Corpus, so these zeros say little. Nor do the \mention{to hell} zeros: at \mention{damn}'s rate, the 33 shared-pronoun strings of \mention{darn} would supply fewer than one token (0.65), and those of \mention{dang} and \mention{drat} fewer still.
+
+In GloWbE, \mention{darn} occurs freely in the pattern. Of its 51 hits with a determinative or genitive, 36 are imprecatives (\mention{Darn that felony!}), 4 of them with \mention{for} V-ing (\mention{darn the rains for messing with our social scene}), and 8 are the mending verb. \mention{Dang} mostly doesn't: 14 of its 20 hits are \mention{dang} before a clause (\mention{dang that list is long!}), and only 5 are imprecatives (\mention{Dang those puppy eyes}). With a pronoun target, separating targeted curses from bleached subjectless oaths on \mention{me} (matching how bleached \mention{Damn it!} and \mention{Fuck it!} enter the subjectless pattern) clarifies the split: \mention{darn} has 9 targeted curses and 1 bleached \mention{darn me} in 13 hits (10 of 13), \mention{drat} has 2 targeted curses in 2 hits (\mention{Niall, drat him, was no help}), and \mention{dang} has no targeted curses but 2 bleached oaths (\mention{Well dang me sideways}; 2 of 11, alongside 7 mentions of the song title \emph{Dang Me} and 2 other hits). In the 100-line \mention{damn} samples, 53 full-NP hits are imprecatives (and 20 are \mention{damn} before a clause, as in \mention{damn that meat was tender}), while 55 pronoun hits are targeted curses and 9 are bleached \mention{damn me} (\mention{if}) oaths (64 of 100 subjectless). \mention{Dang} thus shows formulaic subjectless uses (\mention{Well dang me sideways}, \mention{God dang it}) and five open-NP imprecatives, but its only two subjectless pronoun tokens are bleached oaths, too few to show that targeted pronoun curses are unavailable.
+
+Second, two distinct \mention{be}+participle patterns diverge for the minced forms: the bare-subjunctive \mention{be} + participle dismissal is barely attested (a single \mention{Rules be darned}; the article's bare-subjunctive results), whereas the finite oath \mention{I'll be darned!} (and \mention{be darned if}) accounts for 99 of 100 sampled \mention{be darned} lines, mirroring finite \mention{I'll be damned!} rather than the bare-subjunctive dismissal.
+
+Third, outside the pattern the minced forms share \mention{damn}'s uses as attributive modifier of a noun (\mention{that darn donkey}) and as modifier of an adjective (\mention{pretty darn good}; Table~\ref{tab:minced}), just as they copy fixed formulae inside it (\mention{God dang it}). Even \mention{dang}, which seldom occurs in the pattern, modifies the adjective in 90 of 100 sampled \mention{dang} + adjective lines. Because the correspondence holds outside the pattern too, the pattern alone doesn't account for it; both lexical entries and construction networks can state such a correspondence (the article's comparison of analytical accounts).
+
+Fourth, the euphemisms of \mention{fuck} occur in the pattern in subtitles. In a 100-line sample of the 223 hits for \mention{frak}, \mention{fudge}, \mention{eff}, \mention{feck}, \mention{frig} and \mention{frick} + pronoun or determinative, 68 are subjectless imprecatives (\ref{ex:supp-euphemisms}), though \mention{frak} supplies 40 of them, all but one from \emph{Battlestar Galactica} and its spin-off \emph{Caprica}. Most of the rest are the ordinary verb \mention{fudge} \enquote{falsify} (\mention{fudge the numbers}).
+
+\ea\label{ex:supp-euphemisms}
+\ea \mention{Frak the Gods, the Gods killed her!} \hfill (TV Corpus, \emph{Battlestar Galactica})
+\ex \mention{You know what? Eff Christmas. Eff you.} \hfill (TV Corpus, \emph{Saturday Night Live})
+\ex \mention{Eff you both! Eff you all to H!} \hfill (TV Corpus, \emph{Call Me Fitz})
+\ex \mention{You know what? Frig the dip. They'll have to survive with salsa.} \hfill (TV Corpus, \emph{The Sopranos})
+\ex \mention{Feck it! I'll try the diet.} \hfill (TV Corpus, \emph{Mrs.\ Brown's Boys})
+\ex \mention{Fudge you, butt hole.} \hfill (TV Corpus, \emph{Aqua Teen Hunger Force})
+\z
+\z
+
+Two details stand out in (\ref{ex:supp-euphemisms}). First, \mention{frak}, \mention{eff} and \mention{frig} take open lexical NPs (\ref{ex:supp-euphemisms}a, b, d; \mention{Eff Christmas} occurs in the context of \mention{Eff you}) and, like the minced forms of \mention{damn}, also appear outside the pattern (\mention{don't eff this up}, \mention{where the frak}). Subtitle frequencies show franchise concentration (\mention{frak}) and may also reflect broadcast censorship. Second, \mention{Eff you all to H!} (\ref{ex:supp-euphemisms}c) combines a euphemism of \mention{fuck} with the extension found in \mention{damn you all to hell}, consistent with analogy across formulae.
+
+\clearpage
+\section{Spoken BNC2014 calibration}\label{supp:speech}
+
+To check the subtitle distributions against unscripted speech, I repeated the core searches in Spoken BNC2014.
+
+First, the living heads dominate: \mention{bless} (502 hits), \mention{fuck} (457), \mention{damn} (167), \mention{screw} (50), \mention{bugger} (27) and \mention{sod} (26). Auditing 100 of 237 lines with a determinative or genitive verifies 48 direct tokens, mostly demonstratives (\mention{sod this for a lark}) and \mention{fuck my life}, with five open full NPs (\mention{Fuck this boat club}, \mention{damn those vampires}, \mention{bless that poor girl who was acting}). The archaic and minced heads barely occur: of 22 hits, 4 are imprecatives (\mention{dash it all}, \mention{curse the world}, and \mention{darn it} twice), and there's a single \mention{oh confound it}.
+
+Second, none of the 11 hits for the euphemisms of \mention{fuck} is an imprecative (9 are literal \mention{fudge}), although \mention{fuck it} (138) and \mention{fuck you} (94) are frequent. Their subtitle use may reflect broadcast censorship and scripted invention, which this data can't separate.
+
+Third, overt \mention{God} again goes with the theological heads: 10 \mention{god damn it} and 5 verified \mention{god bless} optatives, and no secular ones (both \mention{god fuck} hits are exclamations before a separate imprecative, as in \mention{oh my god, fuck you}).
+
+Fourth, speech has both PP frames, \mention{damn it to hell} once and \mention{for} V-ing three times in three conversations (\mention{bless him for carrying}, \mention{damn you for being busy}, \mention{bless him for coming on TV}), and no expressive \mention{yay}/\mention{boo} with a lexical NP (0 of 17).
+
+Rates per million words, computed from raw strings in both corpora, show how subtitles differ from speech \citep{kilgarriff2001}. \mention{Bless you} runs at the same rate in both (7.8~pmw in Spoken BNC2014, 7.5 in the TV Corpus), \mention{fuck it} and \mention{sod it} run higher in speech (11.7 vs.\ 5.7; 1.4 vs.\ 0.4), and \mention{fuck you} and \mention{damn it} far higher in drama (7.9 vs.\ 21.1; 11.8 vs.\ 61.9). At TV rates, Spoken BNC2014 would hold 2--3 tokens of \mention{for} V-ing, and it has 3. The corresponding figure for \mention{to hell} is about 3 (it has 1), a difference too small to mean much. For the euphemisms of \mention{fuck}, the sampled TV rate (0.47~pmw) would predict about 5, but 39 of the 68 sampled tokens come from one franchise, \mention{frak} in \emph{Battlestar Galactica} and \emph{Caprica}. Scaled without it, the expectation falls to about 2, so the zero says little \citep{kilgarriff2005}.
+
+\clearpage
+\printbibliography
 
 \end{document}

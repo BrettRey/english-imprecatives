@@ -84,9 +84,11 @@ def run_dunning_pp_analysis():
     # Numerators: Table 5 (T7a/T7b shared-pronoun audited tokens).
     # Denominators: raw T2 + T3 restricted to you/him/her/them (include literal
     # uses on homophonous heads).
+    audit = json.loads((ROOT / "data/davies/tv_pp_shared_audit.json").read_text())
     numerators = {
-        "damn": (32, 11), "fuck": (0, 17), "screw": (0, 13), "bless": (0, 6),
-        "curse": (0, 1), "darn": (0, 1), "blast": (1, 0), "sod": (0, 0), "bugger": (0, 0),
+        h: tuple(audit[q]["by_head"].get(h, {}).get("accepted_shared", 0)
+                 for q in ("T7a_to_hell", "T7b_for_ving"))
+        for h in ("damn", "fuck", "screw", "bless", "curse", "darn", "blast", "sod", "bugger")
     }
     t2, t3s, t3mu = shared_pronoun_bases()
     heads = {
@@ -115,7 +117,7 @@ def run_dunning_pp_analysis():
     # Conservative sensitivity: even if 50% of fuck+screw+bless T2+T3 were literal contamination
     fsb_n_half = fsb_n // 2
     g2_to_hell_half = dunning_g2(32, damn_n - 32, 0, fsb_n_half)
-    g2_for_ving_raw = dunning_g2(11, damn_n - 11, fsb_for, fsb_n - fsb_for)
+    g2_for_ving_raw = dunning_g2(heads["damn"]["for_ving_shared"], damn_n - heads["damn"]["for_ving_shared"], fsb_for, fsb_n - fsb_for)
     # Measured sensitivity: scale each base by its sampled construction share
     # (analysis/tv_frame_samples.py, Chart-view samples of T2 and T3).
     shares = json.loads((Path(__file__).resolve().parent / "tv_frame_samples.json").read_text())["pronoun_base_shares"]

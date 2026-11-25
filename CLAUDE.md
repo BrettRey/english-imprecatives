@@ -8,7 +8,7 @@ Deep empirical, analytical, and editorial work welcome here. This is not a PM se
 
 Focused empirical English-grammar paper targeting *English Language and Linguistics* (*ELL*, <= 10,000 words inclusive of references and footnotes).
 
-**Working title (unapproved):** *Between Defective Verb and Schematic Construction: The English Maledictive and Benedictive NP Paradigm*
+**Submitted 24 November 2026 to English Language and Linguistics.** Title: *Damn him to hell, fuck me for giving a shit, thank you for coming: How Far Generalizations Reach in English*. Current working source: `english-imprecatives-reframed.tex`; the exact submitted package is archived locally in `submission/ell-2026-11-24/`. Await editorial assessment. The earlier `english-imprecatives.tex` is retained as a prior version; the design below records the original research plan.
 
 **Origin (2026-11-22):** Spun off from `../english-interjections/` (`interjection-disputes.tex`, reverted to `8235a47` / `8c8af90` and parked separately) after Round-4 and Round-5 blinded *ELL* reviews converged on the same diagnosis: the English bare-NP imprecative/optative paradigm (*Damn/Bless/Sod/Bugger/Fuck/Blast/Curse/Screw/Hang* + minced *Drat/Darn/Dash/Dang* + *God*-optatives) is the genuinely publishable *ELL* empirical paper, whereas keeping it inside a four-basis interjection survey diluted its evidence base.
 

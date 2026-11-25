@@ -6,8 +6,8 @@
         "t3_me_us_dropped": 68,
         "to_hell_shared": 32,
         "to_hell_per_1k": 19.67,
-        "for_ving_shared": 11,
-        "for_ving_per_1k": 6.76
+        "for_ving_shared": 10,
+        "for_ving_per_1k": 6.15
       },
       "fuck": {
         "t2_t3_shared_raw": 8202,
@@ -79,7 +79,7 @@
       "fsb_t2_t3_shared_raw": 13908,
       "to_hell_g2_raw": 145.0,
       "to_hell_g2_half_denom": 106.9,
-      "for_ving_g2_raw": 6.5,
+      "for_ving_g2_raw": 4.9,
       "damn_est_construction_base": 1372,
       "fsb_est_construction_base": 8491,
       "to_hell_g2_scaled_by_sampled_shares": 126.9,
