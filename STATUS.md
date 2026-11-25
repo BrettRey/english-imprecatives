@@ -6,6 +6,7 @@ stage: complete
 external: in-review
 venue: English Language and Linguistics
 submitted: 2026-11-24
+preprints: [lingbuzz/010557]
 blocked_on: [venue-response]
 updated: 2026-11-24
 source: [STATUS.md, submission/ell-2026-11-24/SUBMITTED-2026-11-24.md]
@@ -13,6 +14,8 @@ next_action: 'Await editorial assessment. Submission confirmation and exact uplo
 ---
 
 # STATUS.md: English imprecatives
+
+**Preprint posted 24 November 2026:** [LingBuzz 010557](https://ling.auf.net/lingbuzz/010557). The public PDF includes the article with author details restored and the full supplementary materials. The replication archive is in `preprint/replication-anonymized.zip`. The journal submission remains active.
 
 **Submitted to English Language and Linguistics on 24 November 2026.** ScholarOne confirmed receipt. The exact submitted title is recorded above. The submitted article, supplement, replication ZIP, LaTeX source ZIP and title page are archived in `submission/ell-2026-11-24/`; the confirmation and manuscript ID remain in that private folder. Await editorial assessment; external peer review is not yet confirmed.
 
