@@ -12,6 +12,8 @@ Focused empirical English-grammar paper targeting *English Language and Linguist
 
 **Origin (2026-11-22):** Spun off from `../english-interjections/` (`interjection-disputes.tex`, reverted to `8235a47` / `8c8af90` and parked separately) after Round-4 and Round-5 blinded *ELL* reviews converged on the same diagnosis: the English bare-NP imprecative/optative paradigm (*Damn/Bless/Sod/Bugger/Fuck/Blast/Curse/Screw/Hang* + minced *Drat/Darn/Dash/Dang* + *God*-optatives) is the genuinely publishable *ELL* empirical paper, whereas keeping it inside a four-basis interjection survey diluted its evidence base.
 
+**Preprint posted 24 November 2026:** [LingBuzz 010557](https://ling.auf.net/lingbuzz/010557), with the full supplement and a link to the replication archive. Journal status remains submitted, awaiting editorial assessment.
+
 ## Core empirical design
 
 See `design/study-design-and-predictions.md` and `design/mark-davies-queries.md`.

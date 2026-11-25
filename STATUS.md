@@ -9,7 +9,12 @@ submitted: 2026-11-24
 preprints: [lingbuzz/010557]
 blocked_on: [venue-response]
 updated: 2026-11-24
-source: [STATUS.md, submission/ell-2026-11-24/SUBMITTED-2026-11-24.md]
+source: [STATUS.md, submission/ell-2026-11-24/SUBMITTED-2026-11-24.md, preprint/README.md]
+claim:
+  argues: >-
+    Extending damn's or fuck's profile to other heads makes wrong predictions; no property studied picks out exactly the inherited set. The evidence constrains subjects and extensions while leaving lexical category and grammatical representation open.
+  provenance: drafted-from-abstract
+  claim_updated: 2026-11-24
 next_action: 'Await editorial assessment. Submission confirmation and exact uploaded files are archived in submission/ell-2026-11-24/. External peer review is not yet confirmed.'
 ---
 
